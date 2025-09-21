@@ -16,7 +16,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@material-tailwind/react";
 import "../public/css/tailwind.css";
-
+import { HashRouter } from 'react-router-dom';
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
