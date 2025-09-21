@@ -19,10 +19,8 @@ import "../public/css/tailwind.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/KH-Shams-Entp/">
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
