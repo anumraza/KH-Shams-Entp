@@ -1,27 +1,35 @@
-name: Deploy Vite to GitHub Pages
+# Simple workflow to deploy a static website to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
+  # Runs on pushes targeting the main branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
 
 jobs:
+  # Single deploy job since we're just deploying
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 18
-
-      - run: npm install
-      - run: npm run build
-
-      # SPA fallback for React Router
-      - run: cp ./dist/index.html ./dist/404.html
-
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Build
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true
