@@ -1,5 +1,8 @@
-import { Home, SignIn, SignUp, CorporatePolicy, } from "@/pages";
 // import CorporatePolicy from "./pages/corporatePolicy";
+import SignUp from './pages/sign-up';
+import CorporatePolicy from './pages/corporatePolicy';
+import SignIn from './pages/sign-in';
+import Home from './pages/home';
 import Products from './pages/products';
 import AboutUs from './pages/aboutUs';
 import ContactUs from './pages/contactUs';
