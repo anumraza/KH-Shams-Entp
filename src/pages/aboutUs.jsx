@@ -73,7 +73,7 @@ export function AboutUs() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-700">
                 <img
-                  src="/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+                  src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
                   alt="Our Packaging Facility"
                   className="w-full h-96 object-cover"
                 />
@@ -248,19 +248,19 @@ export function AboutUs() {
               {
                 name: "KH Shams",
                 position: "CEO & Founder",
-                image: "/img/maaz-ijaz-xKn9Udjublw-unsplash.jpg",
+                image: "/KH-Shams-Entp/img/maaz-ijaz-xKn9Udjublw-unsplash.jpg",
                 description: "With over 20 years in the packaging industry, leading our vision for innovation and growth."
               },
               {
                 name: "Sarah Chen",
                 position: "Operations Director",
-                image: "/img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg",
+                image: "/KH-Shams-Entp/img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg",
                 description: "Ensures our manufacturing processes meet the highest standards of quality and efficiency."
               },
               {
                 name: "David Martinez",
                 position: "Sustainability Officer",
-                image: "/img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg",
+                image: "/KH-Shams-Entp/img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg",
                 description: "Leads our initiatives in eco-friendly packaging and sustainable business practices."
               }
             ].map((member, index) => (

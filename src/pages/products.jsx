@@ -29,19 +29,19 @@ export function Products() {
             description: "Tailored packaging solutions designed specifically for your products",
             products: [
                 {
-                    image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                    image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
                     name: "Folding Cartons",
                     description: "High-quality paperboard boxes perfect for retail products",
                     features: ["Custom printing", "Various sizes", "Eco-friendly materials", "Reinforced corners"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg",
+                    image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg",
                     name: "Rigid Boxes",
                     description: "Premium packaging for luxury items and high-end products",
                     features: ["Premium materials", "Magnetic closures", "Velvet lining", "Custom inserts"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg",
+                    image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg",
                     name: "Corrugated Boxes",
                     description: "Durable shipping and storage solutions for all industries",
                     features: ["Multiple wall options", "Custom printing", "Die-cut designs", "Weather resistant"]
@@ -53,19 +53,19 @@ export function Products() {
             description: "Environmentally friendly packaging options for eco-conscious brands",
             products: [
                 {
-                    image: "/img/box-304780_1280.png",
+                    image: "/KH-Shams-Entp/img/box-304780_1280.png",
                     name: "Recycled Paper Packaging",
                     description: "Packaging made from 100% recycled materials",
                     features: ["FSC certified", "Biodegradable", "Custom branding", "Cost-effective"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+                    image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
                     name: "Biodegradable Plastics",
                     description: "Plant-based plastics that break down naturally",
                     features: ["Compostable", "Food-safe", "Durable", "Custom shapes"]
                 },
                 {
-                    image: "/img/box-157686_1280.png",
+                    image: "/KH-Shams-Entp/img/box-157686_1280.png",
                     name: "Mushroom Packaging",
                     description: "Innovative packaging grown from mycelium and agricultural waste",
                     features: ["100% biodegradable", "Lightweight", "Shock absorbent", "Custom molded"]
@@ -77,19 +77,19 @@ export function Products() {
             description: "Versatile packaging solutions for food, retail, and industrial applications",
             products: [
                 {
-                    image: "/img/brandable-box-yW9jdBmE1BY-unsplash.jpg",
+                    image: "/KH-Shams-Entp/img/brandable-box-yW9jdBmE1BY-unsplash.jpg",
                     name: "Stand-up Pouches",
                     description: "Convenient and eye-catching packaging for various products",
                     features: ["Resealable options", "Custom shapes", "High-quality printing", "Barrier protection"]
                 },
                 {
-                    image: "/img/business-4271251_1280.png",
+                    image: "/KH-Shams-Entp/img/business-4271251_1280.png",
                     name: "Vacuum Bags",
                     description: "Air-tight packaging for food preservation and industrial use",
                     features: ["Multi-layer protection", "Durable seals", "Custom sizes", "High barrier films"]
                 },
                 {
-                    image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                    image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
                     name: "Shrink Sleeves",
                     description: "360° packaging that conforms to any container shape",
                     features: ["Full-body printing", "Tamper evidence", "UV protection", "Various materials"]
@@ -101,19 +101,19 @@ export function Products() {
             description: "Solutions designed to protect your products during shipping and handling",
             products: [
                 {
-                    image: "/img/shipping-box.jpg",
+                    image: "/KH-Shams-Entp/img/shipping-box.jpg",
                     name: "Bubble Wrap",
                     description: "Classic protective material with excellent cushioning properties",
                     features: ["Various bubble sizes", "Anti-static options", "Perforated rolls", "Custom widths"]
                 },
                 {
-                    image: "/img/pexels-tima-miroshnichenko-6169057.jpg",
+                    image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169057.jpg",
                     name: "Foam Inserts",
                     description: "Custom-cut foam for perfect product protection",
                     features: ["Precision cutting", "Multiple density options", "Custom shapes", "Lightweight"]
                 },
                 {
-                    image: "/img/pexels-karolina-grabowska-4498152.jpg",
+                    image: "/KH-Shams-Entp/img/pexels-karolina-grabowska-4498152.jpg",
                     name: "Air Pillows",
                     description: "Inflatable packaging that provides cushioning and void fill",
                     features: ["Space efficient", "Cost effective", "Easy to use", "Recyclable"]
@@ -125,19 +125,19 @@ export function Products() {
             description: "Unique packaging solutions for specific industries and applications",
             products: [
                 {
-                    image: "/img/pexels-tima-miroshnichenko-6169056.jpg",
+                    image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169056.jpg",
                     name: "Food-Grade Packaging",
                     description: "Safe packaging solutions for food and beverage products",
                     features: ["FDA approved", "Temperature resistant", "Grease resistant", "Airtight seals"]
                 },
                 {
-                    image: "/img/pexels-karolina-grabowska-4506243.jpg",
+                    image: "/KH-Shams-Entp/img/pexels-karolina-grabowska-4506243.jpg",
                     name: "Pharmaceutical Packaging",
                     description: "Compliant packaging for medical and pharmaceutical products",
                     features: ["Child-resistant", "Tamper-evident", "Sterile barriers", "Compliance guaranteed"]
                 },
                 {
-                    image: "/img/package-1511683_1280.jpg",
+                    image: "/KH-Shams-Entp/img/package-1511683_1280.jpg",
                     name: "Electrostatic Packaging",
                     description: "Specialized packaging for electronic components",
                     features: ["ESD protection", "Static shielding", "Moisture barrier", "Durable construction"]

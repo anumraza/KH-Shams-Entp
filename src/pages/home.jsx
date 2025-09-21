@@ -120,23 +120,23 @@ export function Home() {
   // Updated packaging-related images
   const images = [
     {
-      url: "/img/pexels-tiger-lily-4481260.jpg",
+      url: "/KH-Shams-Entp/img/pexels-tiger-lily-4481260.jpg",
       title: "CUSTOM PACKAGING SOLUTIONS",
       subtitle: "Tailored to your specific product requirements"
     },
     {
-      url: "/img/WhatsApp Image 2025-09-21 at 15.55.47_f325106e.jpg",
+      url: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_f325106e.jpg",
       title: "SUSTAINABLE MATERIALS",
       subtitle: "Eco-friendly options for environmentally conscious brands"
     },
     {
-      url: "/img/package-1511683_1280.jpg",
+      url: "/KH-Shams-Entp/img/package-1511683_1280.jpg",
       title: "QUALITY MANUFACTURING",
       subtitle: "Precision production with rigorous quality control"
     },
 
     {
-      url: "/img/empty-boxes-on-table.jpg",
+      url: "/KH-Shams-Entp/img/empty-boxes-on-table.jpg",
       title: "QUALITY MANUFACTURING",
       subtitle: "Precision production with rigorous quality control"
     }
@@ -422,7 +422,7 @@ export function Home() {
                 <div className="rounded-3xl overflow-hidden shadow-2xl">
                   <img
                     alt="KH Shams Enterprise Packaging"
-                    src="/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+                    src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
                     className="w-full h-96 object-cover"
                   />
                 </div>
@@ -469,7 +469,7 @@ export function Home() {
       <section
         id="vision"
         className="relative min-h-screen px-4 pt-28 pb-20 bg-cover bg-center bg-no-repeat bg-fixed"
-        style={{ backgroundImage: "url('/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
+        style={{ backgroundImage: "url('/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
       >
         {/* Dark Overlay with Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 z-0"></div>
@@ -589,28 +589,28 @@ export function Home() {
               {
                 title: "Custom Packaging",
                 description: "Tailored solutions designed specifically for your products",
-                image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
                 icon: "🎨",
                 color: "bg-blue-500"
               },
               {
                 title: "Sustainable Solutions",
                 description: "Eco-friendly packaging options for environmentally conscious brands",
-                image: "/img/box-6063328_1280.png",
+                image: "/KH-Shams-Entp/img/box-6063328_1280.png",
                 icon: "🌱",
                 color: "bg-green-500"
               },
               {
                 title: "Bulk Manufacturing",
                 description: "Large-scale production with consistent quality and timely delivery",
-                image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+                image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
                 icon: "🏭",
                 color: "bg-orange-500"
               },
               {
                 title: "Logistics Support",
                 description: "End-to-end supply chain management and distribution solutions",
-                image: "/img/pexels-tima-miroshnichenko-6169056.jpg",
+                image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169056.jpg",
                 icon: "🚚",
                 color: "bg-purple-500"
               }
@@ -664,35 +664,35 @@ export function Home() {
                   title: "Consultation",
                   description: "Understanding your needs and requirements",
                   icon: "💬",
-                  image: "/img/consultation-process.jpg"
+                  image: "/KH-Shams-Entp/img/consultation-process.jpg"
                 },
                 {
                   step: "02",
                   title: "Design",
                   description: "Creating custom packaging concepts",
                   icon: "✏️",
-                  image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg"
+                  image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg"
                 },
                 {
                   step: "03",
                   title: "Prototyping",
                   description: "Developing and testing samples",
                   icon: "🔬",
-                  image: "/img/prototyping-process.jpg"
+                  image: "/KH-Shams-Entp/img/prototyping-process.jpg"
                 },
                 {
                   step: "04",
                   title: "Production",
                   description: "Manufacturing with quality control",
                   icon: "🏭",
-                  image: "/img/production-process.jpg"
+                  image: "/KH-Shams-Entp/img/production-process.jpg"
                 },
                 {
                   step: "05",
                   title: "Delivery",
                   description: "Timely shipping and support",
                   icon: "📦",
-                  image: "/img/delivery-process.jpg"
+                  image: "/KH-Shams-Entp/img/delivery-process.jpg"
                 }
               ].map((process, index) => (
                 <div key={index} className="text-center group">

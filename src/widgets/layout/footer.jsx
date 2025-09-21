@@ -20,7 +20,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
           <div className="w-full px-4 lg:w-6/12">
             <a href="/" className="flex items-center justify-center lg:justify-start">
               <img
-                src="/img/pinnacle.png"
+                src="/KH-Shams-Entp/img/pinnacle.png"
                 alt="Pinnacle Logo"
                 className="h-24 w-auto mr-2"
               />
