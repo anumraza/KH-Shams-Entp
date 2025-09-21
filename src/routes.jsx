@@ -1,6 +1,6 @@
 import { Home, SignIn, SignUp, CorporatePolicy, } from "@/pages";
 // import CorporatePolicy from "./pages/corporatePolicy";
-import Products from './pages/Products';
+import Products from './pages/products';
 import AboutUs from './pages/aboutUs';
 import ContactUs from './pages/contactUs';
 
