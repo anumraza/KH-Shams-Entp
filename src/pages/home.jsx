@@ -177,6 +177,37 @@ export function Home() {
     setAutoSlide(true);
   };
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    needs: '',
+    message: '',
+    terms: false
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData(prevData => ({
+      ...prevData,
+      [name]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Form submission logic would go here
+    alert('Form submitted! We\'ll get back to you within 24 hours.');
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      needs: '',
+      message: '',
+      terms: false
+    });
+  };
+
   return (
     <>
       {/* Enhanced Hero Section */}
@@ -752,106 +783,133 @@ export function Home() {
 
       {/* Contact Form */}
       {/* Contact Form */}
-      <div id="contact" className="relative my-16 py-16 bg-gradient-to-br from-purple-50 to-indigo-50 overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-40 h-40 bg-purple-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
-        <div className="absolute bottom-0 right-0 w-32 h-32 bg-indigo-300 rounded-full translate-x-1/3 translate-y-1/3 opacity-40"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Need Custom Packaging Solutions?</h2>
-            <p className="text-lg text-purple-700 max-w-2xl mx-auto">
-              Complete this form and we will get back to you within 24 hours.
+      <div id="contact" className="contact-section">
+        <div className="contact-container">
+          <div className="contact-info">
+            <div className="logo">
+              <i className="fas fa-box-open"></i>
+              PackageCraft
+            </div>
+            <p className="info-text">
+              We specialize in creating custom packaging solutions that elevate your brand and protect your products. Let's discuss how we can help your business stand out.
             </p>
+            <div className="contact-details">
+              <div>
+                <i className="fas fa-phone"></i>
+                <span>+1 (555) 123-4567</span>
+              </div>
+              <div>
+                <i className="fas fa-envelope"></i>
+                <span>contact@packagecraft.com</span>
+              </div>
+              <div>
+                <i className="fas fa-map-marker-alt"></i>
+                <span>123 Design Street, Creative City</span>
+              </div>
+            </div>
+            <div className="social-icons">
+              <a href="#"><i className="fab fa-facebook-f"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
 
-          <form className="mx-auto w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 md:p-8 transition-all duration-300 hover:shadow-2xl">
-            <div className="mb-8 flex flex-col md:flex-row gap-6">
-              <div className="flex-1">
-                <label htmlFor="fullName" className="block text-sm font-medium text-purple-800 mb-2">Full Name</label>
+          <div className="contact-form">
+            <div className="decoration decoration-1"></div>
+            <div className="decoration decoration-2"></div>
+
+            <h2 className="form-title">Get Custom Packaging Solutions</h2>
+            <p className="form-subtitle">Complete this form and we will get back to you within 24 hours.</p>
+
+            <form onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="input-group">
+                  <label htmlFor="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div className="input-group">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="input-group">
+                <label htmlFor="company">Company Name</label>
                 <input
                   type="text"
-                  id="fullName"
-                  className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                  placeholder="Enter your full name"
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Enter your company name"
                 />
               </div>
-              <div className="flex-1">
-                <label htmlFor="email" className="block text-sm font-medium text-purple-800 mb-2">Email Address</label>
+
+              <div className="input-group">
+                <label htmlFor="needs">Packaging Needs</label>
+                <select
+                  id="needs"
+                  name="needs"
+                  value={formData.needs}
+                  onChange={handleChange}
+                >
+                  <option value="">Select your packaging needs</option>
+                  <option value="food">Food & Beverage</option>
+                  <option value="cosmetics">Cosmetics & Beauty</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="retail">Retail Products</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div className="input-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Tell us about your packaging requirements"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div className="checkbox-group">
                 <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                  placeholder="Enter your email address"
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  checked={formData.terms}
+                  onChange={handleChange}
+                  required
                 />
+                <label htmlFor="terms">I agree to the Terms and Conditions</label>
               </div>
-            </div>
 
-            <div className="mb-8">
-              <label htmlFor="company" className="block text-sm font-medium text-purple-800 mb-2">Company Name</label>
-              <input
-                type="text"
-                id="company"
-                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                placeholder="Enter your company name"
-              />
-            </div>
+              <button type="submit" className="btn">
+                Send Message <i className="fas fa-paper-plane"></i>
+              </button>
+            </form>
 
-            <div className="mb-8">
-              <label htmlFor="packagingNeeds" className="block text-sm font-medium text-purple-800 mb-2">Packaging Needs</label>
-              <select
-                id="packagingNeeds"
-                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-              >
-                <option value="">Select your packaging needs</option>
-                <option value="food">Food Packaging</option>
-                <option value="cosmetics">Cosmetics Packaging</option>
-                <option value="electronics">Electronics Packaging</option>
-                <option value="medical">Medical Packaging</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div className="mb-8">
-              <label htmlFor="message" className="block text-sm font-medium text-purple-800 mb-2">Message</label>
-              <textarea
-                id="message"
-                rows={5}
-                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
-                placeholder="Tell us about your custom packaging requirements"
-              ></textarea>
-            </div>
-
-            <div className="mb-8 flex items-start">
-              <input
-                type="checkbox"
-                id="terms"
-                className="mt-1 mr-3 w-5 h-5 text-purple-600 focus:ring-purple-500 rounded"
-              />
-              <label htmlFor="terms" className="text-sm text-gray-700">
-                I agree to the <a href="#" className="text-purple-600 hover:text-purple-800 font-medium transition-colors">Terms and Conditions</a>
-              </label>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
-            >
-              Send Message
-              <i className="fas fa-paper-plane ml-2"></i>
-            </button>
-          </form>
-
-          <div className="mt-12 text-center">
-            <p className="text-purple-700">Prefer to contact us directly?</p>
-            <div className="flex justify-center space-x-6 mt-4">
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
-                <i className="fas fa-phone-alt mr-2"></i> +1 (555) 123-4567
-              </a>
-              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
-                <i className="fas fa-envelope mr-2"></i> info@packagingexample.com
-              </a>
-            </div>
+            <div className="animated-border"></div>
           </div>
         </div>
       </div>
