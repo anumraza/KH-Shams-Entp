@@ -322,10 +322,7 @@ export function Home() {
                       <div className="absolute  bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
 
-                    {/* Number Indicator */}
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                      {index + 1}
-                    </div>
+
                   </div>
 
                   {/* Content */}
