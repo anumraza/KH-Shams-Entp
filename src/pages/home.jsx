@@ -751,44 +751,109 @@ export function Home() {
       </section>
 
       {/* Contact Form */}
-      <div id="login" className="my-16 py-10 bg-purple-50">
-        <PageTitle section="Contact Us" heading="Need Custom Packaging Solutions?">
-          Complete this form and we will get back to you within 24 hours.
-        </PageTitle>
-        <form className="mx-auto w-full mt-12 lg:w-5/12">
-          <div className="mb-8 flex flex-col md:flex-row gap-8">
-            <Input variant="outlined" size="lg" label="Full Name" className="flex-1" />
-            <Input variant="outlined" size="lg" label="Email Address" className="flex-1" />
+      {/* Contact Form */}
+      <div id="contact" className="relative my-16 py-16 bg-gradient-to-br from-purple-50 to-indigo-50 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-40 h-40 bg-purple-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"></div>
+        <div className="absolute bottom-0 right-0 w-32 h-32 bg-indigo-300 rounded-full translate-x-1/3 translate-y-1/3 opacity-40"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Need Custom Packaging Solutions?</h2>
+            <p className="text-lg text-purple-700 max-w-2xl mx-auto">
+              Complete this form and we will get back to you within 24 hours.
+            </p>
           </div>
-          <div className="mb-8">
-            <Input variant="outlined" size="lg" label="Company Name" />
-          </div>
-          <div className="mb-8">
-            <Input variant="outlined" size="lg" label="Packaging Needs" />
-          </div>
-          <Textarea variant="outlined" size="lg" label="Message" rows={8} />
-          <Checkbox
-            label={
-              <Typography
-                variant="small"
-                color="gray"
-                className="flex items-center font-normal"
+
+          <form className="mx-auto w-full max-w-2xl bg-white rounded-2xl shadow-xl p-6 md:p-8 transition-all duration-300 hover:shadow-2xl">
+            <div className="mb-8 flex flex-col md:flex-row gap-6">
+              <div className="flex-1">
+                <label htmlFor="fullName" className="block text-sm font-medium text-purple-800 mb-2">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div className="flex-1">
+                <label htmlFor="email" className="block text-sm font-medium text-purple-800 mb-2">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                  placeholder="Enter your email address"
+                />
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <label htmlFor="company" className="block text-sm font-medium text-purple-800 mb-2">Company Name</label>
+              <input
+                type="text"
+                id="company"
+                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                placeholder="Enter your company name"
+              />
+            </div>
+
+            <div className="mb-8">
+              <label htmlFor="packagingNeeds" className="block text-sm font-medium text-purple-800 mb-2">Packaging Needs</label>
+              <select
+                id="packagingNeeds"
+                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
               >
-                I agree the
-                <a
-                  href="#"
-                  className="font-medium transition-colors hover:text-gray-900"
-                >
-                  &nbsp;Terms and Conditions
-                </a>
-              </Typography>
-            }
-            containerProps={{ className: "-ml-2.5" }}
-          />
-          <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-            Send Message
-          </Button>
-        </form>
+                <option value="">Select your packaging needs</option>
+                <option value="food">Food Packaging</option>
+                <option value="cosmetics">Cosmetics Packaging</option>
+                <option value="electronics">Electronics Packaging</option>
+                <option value="medical">Medical Packaging</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div className="mb-8">
+              <label htmlFor="message" className="block text-sm font-medium text-purple-800 mb-2">Message</label>
+              <textarea
+                id="message"
+                rows={5}
+                className="w-full px-4 py-3 border border-purple-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                placeholder="Tell us about your custom packaging requirements"
+              ></textarea>
+            </div>
+
+            <div className="mb-8 flex items-start">
+              <input
+                type="checkbox"
+                id="terms"
+                className="mt-1 mr-3 w-5 h-5 text-purple-600 focus:ring-purple-500 rounded"
+              />
+              <label htmlFor="terms" className="text-sm text-gray-700">
+                I agree to the <a href="#" className="text-purple-600 hover:text-purple-800 font-medium transition-colors">Terms and Conditions</a>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+            >
+              Send Message
+              <i className="fas fa-paper-plane ml-2"></i>
+            </button>
+          </form>
+
+          <div className="mt-12 text-center">
+            <p className="text-purple-700">Prefer to contact us directly?</p>
+            <div className="flex justify-center space-x-6 mt-4">
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <i className="fas fa-phone-alt mr-2"></i> +1 (555) 123-4567
+              </a>
+              <a href="#" className="text-purple-600 hover:text-purple-800 transition-colors">
+                <i className="fas fa-envelope mr-2"></i> info@packagingexample.com
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="contact" className="bg-white">
