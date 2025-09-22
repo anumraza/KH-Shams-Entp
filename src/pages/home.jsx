@@ -700,9 +700,7 @@ export function Home() {
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                       {process.icon}
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                      {process.step}
-                    </div>
+
                   </div>
                   <Typography variant="h6" color="blue-gray" className="mb-2 font-semibold">
                     {process.title}
