@@ -751,7 +751,7 @@ export function Home() {
       </section>
 
       {/* Contact Form */}
-      <div id="login" className="my-16">
+      <div id="login" className="my-16 bg-pink-50">
         <PageTitle section="Contact Us" heading="Need Custom Packaging Solutions?">
           Complete this form and we will get back to you within 24 hours.
         </PageTitle>
