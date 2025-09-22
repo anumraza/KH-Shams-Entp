@@ -788,7 +788,7 @@ export function Home() {
           <div className="contact-info">
             <div className="logo">
               <i className="fas fa-box-open"></i>
-              PackageCraft
+              KH Shams Entp
             </div>
             <p className="info-text">
               We specialize in creating custom packaging solutions that elevate your brand and protect your products. Let's discuss how we can help your business stand out.
@@ -800,7 +800,7 @@ export function Home() {
               </div>
               <div>
                 <i className="fas fa-envelope"></i>
-                <span>contact@packagecraft.com</span>
+                <span>info@khshamsentp.com</span>
               </div>
               <div>
                 <i className="fas fa-map-marker-alt"></i>
