@@ -314,7 +314,7 @@ export function Home() {
 
                   {/* Icon Container with Shine Effect */}
                   <div className="relative mb-6">
-                    <div className={`w-16 h-16 bg-black ${color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg relative overflow-hidden`}>
+                    <div className={`w-16 h-16 bg-orange-200 ${color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg relative overflow-hidden`}>
                       {React.createElement(icon, {
                         className: "w-8 h-8 text-white relative z-10",
                       })}
