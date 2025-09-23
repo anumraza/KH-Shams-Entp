@@ -312,184 +312,185 @@ export function Home() {
 
       {/* Enhanced Features Section */}
       <section className="relative bg-gradient-to-b from-white to-gray-50 px-4 py-20 lg:py-28">
-        {/* Background Pattern */}
-        <div className="text-center mb-16 relative">
-          {/* Background decorative elements */}
-          <div className="absolute top-10 left-10 w-20 h-20 bg-orange-100 rounded-full opacity-40 blur-xl"></div>
-          <div className="absolute bottom-5 right-10 w-16 h-16 bg-blue-100 rounded-full opacity-30 blur-xl"></div>
+        <div className="container mx-auto">
+          {/* Background Pattern */}
+          <div className="text-center mb-16 relative">
+            {/* Background decorative elements */}
+            <div className="absolute top-10 left-10 w-20 h-20 bg-orange-100 rounded-full opacity-40 blur-xl"></div>
+            <div className="absolute bottom-5 right-10 w-16 h-16 bg-blue-100 rounded-full opacity-30 blur-xl"></div>
 
-          <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
-            Why Choose KH Shams Enterprise?
-          </Typography>
-          <Typography variant="lead" className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
-            Delivering excellence in packaging solutions with innovation, quality, and reliability
-          </Typography>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 mb-16 lg:mb-24">
-          {featuresData.map(({ color, title, icon, description }, index) => (
-            <div
-              key={title}
-              className="group relative"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-            >
-              {/* Main Card */}
-              <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/80 hover:border-blue-300/50 h-full transform hover:-translate-y-3 relative overflow-hidden">
-
-                {/* Background Gradient Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br from-${color}-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`}></div>
-
-                {/* Animated background pattern */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                  <div className="absolute top-2 right-2 w-8 h-8 bg-current opacity-5 rounded-full"></div>
-                  <div className="absolute bottom-2 left-2 w-6 h-6 bg-current opacity-5 rounded-full"></div>
-                </div>
-
-                {/* Icon Container */}
-                <div className="relative mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br from-${color}-500 to-${color}-700 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg relative overflow-hidden group-hover:shadow-xl`}>
-                    {React.createElement(icon, {
-                      className: "w-8 h-8 text-white relative z-10",
-                    })}
-                    {/* Shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <Typography
-                  variant="h5"
-                  className="mb-4 font-bold text-lg lg:text-xl text-gray-800 group-hover:text-gray-900 transition-colors duration-300 relative z-10"
-                >
-                  {title}
-                </Typography>
-
-                <Typography className="text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300 relative z-10">
-                  {description}
-                </Typography>
-
-                {/* Hover Arrow Indicator */}
-                <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1">
-                  <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-
-                {/* Bottom Border Animation */}
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-4/5 transition-all duration-500 rounded-full"></div>
-              </div>
-
-              {/* Floating particles */}
-              <div className="absolute -z-10 top-4 right-4 w-3 h-3 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:animate-bounce"></div>
-              <div className="absolute -z-10 bottom-4 left-4 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-150 group-hover:animate-pulse"></div>
-              <div className="absolute -z-10 top-1/2 right-8 w-1.5 h-1.5 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-300"></div>
-            </div>
-          ))}
-        </div>
-        {/* About Section */}
-        <div id="about" className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="w-full lg:w-6/12">
-            <div className="mb-8">
-              <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg mb-6">
-                <BuildingStorefrontIcon className="w-10 h-10 text-white" />
-              </div>
-              <Typography variant="h2" className="mb-4 font-bold text-gray-900">
-                About KH Shams Enterprise
-              </Typography>
-              <Typography className="text-lg text-gray-700 leading-relaxed mb-8">
-                KH Shams Enterprise is a leading manufacturer of custom packaging solutions,
-                delivering high-quality, innovative packaging products tailored to our clients'
-                specific needs. With state-of-the-art manufacturing facilities and a team of
-                experienced packaging experts, we provide end-to-end packaging solutions that
-                protect products, enhance brand presence, and optimize logistics.
-              </Typography>
-            </div>
-
-            <div className="space-y-6">
-              {[
-                {
-                  number: "01",
-                  title: "Custom Packaging Design & Manufacturing",
-                  color: "bg-blue-600",
-                  icon: "🎨"
-                },
-                {
-                  number: "02",
-                  title: "Sustainable Packaging Solutions",
-                  color: "bg-green-600",
-                  icon: "🌱"
-                },
-                {
-                  number: "03",
-                  title: "Supply Chain & Logistics Optimization",
-                  color: "bg-orange-500",
-                  icon: "🚚"
-                }
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className={`${item.color} text-white rounded-lg w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0`}>
-                    {item.number}
-                  </div>
-                  <div className="flex-1">
-                    <Typography variant="h6" className="font-semibold text-gray-900 mb-1">
-                      {item.title}
-                    </Typography>
-                    <Typography className="text-gray-600 text-sm">
-                      {item.description}
-                    </Typography>
-                  </div>
-                  <span className="text-2xl">{item.icon}</span>
-                </div>
-              ))}
-            </div>
+            <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
+              Why Choose KH Shams Enterprise?
+            </Typography>
+            <Typography variant="lead" className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
+              Delivering excellence in packaging solutions with innovation, quality, and reliability
+            </Typography>
           </div>
 
-          <div className="w-full lg:w-6/12">
-            <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  alt="KH Shams Enterprise Packaging"
-                  src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
-                  className="w-full h-96 object-cover"
-                />
-              </div>
-              {/* Floating Stats */}
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
-                <div className="text-center">
-                  <Typography variant="h3" className="text-blue-600 font-bold mb-1">
-                    15+
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 mb-16 lg:mb-24">
+            {featuresData.map(({ color, title, icon, description }, index) => (
+              <div
+                key={title}
+                className="group relative"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                {/* Main Card */}
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-200/80 hover:border-blue-300/50 h-full transform hover:-translate-y-3 relative overflow-hidden">
+
+                  {/* Background Gradient Effect */}
+                  <div className={`absolute inset-0 bg-gradient-to-br from-${color}-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`}></div>
+
+                  {/* Animated background pattern */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    <div className="absolute top-2 right-2 w-8 h-8 bg-current opacity-5 rounded-full"></div>
+                    <div className="absolute bottom-2 left-2 w-6 h-6 bg-current opacity-5 rounded-full"></div>
+                  </div>
+
+                  {/* Icon Container */}
+                  <div className="relative mb-6">
+                    <div className={`w-16 h-16 bg-gradient-to-br from-${color}-500 to-${color}-700 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg relative overflow-hidden group-hover:shadow-xl`}>
+                      {React.createElement(icon, {
+                        className: "w-8 h-8 text-white relative z-10",
+                      })}
+                      {/* Shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <Typography
+                    variant="h5"
+                    className="mb-4 font-bold text-lg lg:text-xl text-gray-800 group-hover:text-gray-900 transition-colors duration-300 relative z-10"
+                  >
+                    {title}
                   </Typography>
-                  <Typography variant="small" className="text-gray-600">
-                    Years Experience
+
+                  <Typography className="text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300 relative z-10">
+                    {description}
                   </Typography>
+
+                  {/* Hover Arrow Indicator */}
+                  <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-1">
+                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
+
+                  {/* Bottom Border Animation */}
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-4/5 transition-all duration-500 rounded-full"></div>
                 </div>
+
+                {/* Floating particles */}
+                <div className="absolute -z-10 top-4 right-4 w-3 h-3 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:animate-bounce"></div>
+                <div className="absolute -z-10 bottom-4 left-4 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-150 group-hover:animate-pulse"></div>
+                <div className="absolute -z-10 top-1/2 right-8 w-1.5 h-1.5 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 delay-300"></div>
+              </div>
+            ))}
+          </div>
+          {/* About Section */}
+          <div id="about" className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="w-full lg:w-6/12">
+              <div className="mb-8">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg mb-6">
+                  <BuildingStorefrontIcon className="w-10 h-10 text-white" />
+                </div>
+                <Typography variant="h2" className="mb-4 font-bold text-gray-900">
+                  About KH Shams Enterprise
+                </Typography>
+                <Typography className="text-lg text-gray-700 leading-relaxed mb-8">
+                  KH Shams Enterprise is a leading manufacturer of custom packaging solutions,
+                  delivering high-quality, innovative packaging products tailored to our clients'
+                  specific needs. With state-of-the-art manufacturing facilities and a team of
+                  experienced packaging experts, we provide end-to-end packaging solutions that
+                  protect products, enhance brand presence, and optimize logistics.
+                </Typography>
               </div>
 
-              {/* Accreditation Badge */}
-              <div className="absolute -top-4 -left-4 bg-green-100 rounded-full p-3 shadow-lg">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                  <ShieldCheckIcon className="w-6 h-6 text-white" />
-                </div>
+              <div className="space-y-6">
+                {[
+                  {
+                    number: "01",
+                    title: "Custom Packaging Design & Manufacturing",
+                    color: "bg-blue-600",
+                    icon: "🎨"
+                  },
+                  {
+                    number: "02",
+                    title: "Sustainable Packaging Solutions",
+                    color: "bg-green-600",
+                    icon: "🌱"
+                  },
+                  {
+                    number: "03",
+                    title: "Supply Chain & Logistics Optimization",
+                    color: "bg-orange-500",
+                    icon: "🚚"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className={`${item.color} text-white rounded-lg w-12 h-12 flex items-center justify-center font-bold text-lg flex-shrink-0`}>
+                      {item.number}
+                    </div>
+                    <div className="flex-1">
+                      <Typography variant="h6" className="font-semibold text-gray-900 mb-1">
+                        {item.title}
+                      </Typography>
+                      <Typography className="text-gray-600 text-sm">
+                        {item.description}
+                      </Typography>
+                    </div>
+                    <span className="text-2xl">{item.icon}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Feature Card */}
-            <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 text-white">
-              <Typography variant="h5" className="font-bold mb-3">
-                Premium Packaging Services
-              </Typography>
-              <Typography className="text-blue-100">
-                At KH Shams Enterprise, we follow a client-focused approach to deliver
-                innovative packaging solutions. Our methodology is built on understanding
-                your unique product requirements and translating them into functional,
-                cost-effective, and visually appealing packaging.
-              </Typography>
+            <div className="w-full lg:w-6/12">
+              <div className="relative">
+                <div className="rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    alt="KH Shams Enterprise Packaging"
+                    src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+                    className="w-full h-96 object-cover"
+                  />
+                </div>
+                {/* Floating Stats */}
+                <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
+                  <div className="text-center">
+                    <Typography variant="h3" className="text-blue-600 font-bold mb-1">
+                      15+
+                    </Typography>
+                    <Typography variant="small" className="text-gray-600">
+                      Years Experience
+                    </Typography>
+                  </div>
+                </div>
+
+                {/* Accreditation Badge */}
+                <div className="absolute -top-4 -left-4 bg-green-100 rounded-full p-3 shadow-lg">
+                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                    <ShieldCheckIcon className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Feature Card */}
+              <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 text-white">
+                <Typography variant="h5" className="font-bold mb-3">
+                  Premium Packaging Services
+                </Typography>
+                <Typography className="text-blue-100">
+                  At KH Shams Enterprise, we follow a client-focused approach to deliver
+                  innovative packaging solutions. Our methodology is built on understanding
+                  your unique product requirements and translating them into functional,
+                  cost-effective, and visually appealing packaging.
+                </Typography>
+              </div>
             </div>
           </div>
         </div>
-
       </section >
 
 
