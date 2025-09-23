@@ -385,7 +385,10 @@ export function Home() {
               </div>
 
               {/* Feature Card */}
-              <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 text-white">
+              <div className="mt-8 rounded-2xl p-6 text-white" style={{
+                background: "linear-gradient(135deg, #2a6b7f 0%, #38a3a5 100%)",
+              }}
+              >
                 <Typography variant="h5" className="font-bold mb-3">
                   Premium Packaging Services
                 </Typography>
@@ -509,7 +512,7 @@ export function Home() {
 
       {/* services Section */}
 
-      < section id="services" className="bg-gradient-to-br from-green-100 via-white to-orange-100 relative overflow-hidden py-20 lg:py-28 px-4" >
+      < section id="services" className="bg-gradient-to-br from-green-50 via-white to-orange-100 relative overflow-hidden py-20 lg:py-28 px-4" >
         <div className="container mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
@@ -587,9 +590,6 @@ export function Home() {
 
           {/* Process Section - Enhanced */}
           <div className="mb-20 py-16 relative overflow-hidden">
-            {/* Optional decorative elements */}
-            <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-20"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-200 rounded-full translate-x-1/3 translate-y-1/3 opacity-20"></div>
 
             <div className="relative z-10">
               <div className="text-center mb-16">
