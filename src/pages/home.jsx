@@ -304,7 +304,7 @@ export function Home() {
                 <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg mb-6">
                   <BuildingStorefrontIcon className="w-10 h-10 text-white" />
                 </div>
-                <Typography variant="h2" className="mb-4 font-bold text-gray-900">
+                <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
                   About KH Shams Enterprise
                 </Typography>
                 <Typography className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -513,7 +513,7 @@ export function Home() {
         <div className="container mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
-            <Typography variant="h2" color="blue-gray" className="mb-4 font-bold text-3xl lg:text-4xl">
+            <Typography variant="h2" color="blue-gray" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
               Our Packaging Services
             </Typography>
             <Typography variant="lead" className="text-blue-gray-700 text-lg lg:text-xl max-w-3xl mx-auto">
@@ -593,7 +593,7 @@ export function Home() {
 
             <div className="relative z-10">
               <div className="text-center mb-16">
-                <Typography variant="h3" color="blue-gray" className="mb-4 font-bold text-gray-800">
+                <Typography variant="h3" color="blue-gray" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
                   Our Process
                 </Typography>
                 <Typography className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -714,7 +714,7 @@ export function Home() {
 
               {/* Optional CTA button */}
               <div className="mt-12 pt-8 border-t border-white/20">
-                <Typography variant="h6" className="mb-4 text-blue-100 font-light">
+                <Typography variant="h6" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
                   Trusted by 500+ satisfied clients worldwide
                 </Typography>
                 <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg">
@@ -726,7 +726,7 @@ export function Home() {
 
           {/* CTA Section */}
           <div className="text-center">
-            <Typography variant="h3" color="blue-gray" className="mb-4 font-bold">
+            <Typography variant="h3" color="blue-gray" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
               Ready to Transform Your Packaging?
             </Typography>
             <Typography className="text-blue-gray-600 mb-8 max-w-2xl mx-auto">
