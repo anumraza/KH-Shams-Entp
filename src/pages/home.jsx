@@ -781,7 +781,7 @@ export function Home() {
             <div className="decoration decoration-1"></div>
             <div className="decoration decoration-2"></div>
 
-            <h2 className="form-title">Get Custom Packaging Solutions</h2>
+            <h2 className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">Get Custom Packaging Solutions</h2>
             <p className="form-subtitle">Complete this form and we will get back to you within 24 hours.</p>
 
             <form onSubmit={handleSubmit}>
