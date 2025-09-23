@@ -509,7 +509,7 @@ export function Home() {
 
       {/* services Section */}
 
-      < section id="services" className="bg-gradient-to-br from-blue-100 via-white to-indigo-100 relative overflow-hidden py-20 lg:py-28 px-4" >
+      < section id="services" className="bg-gradient-to-br from-green-100 via-white to-orange-100 relative overflow-hidden py-20 lg:py-28 px-4" >
         <div className="container mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
