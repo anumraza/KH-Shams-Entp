@@ -674,70 +674,90 @@ export function Home() {
             ))}
           </div>
 
-          {/* Process Section - Simplified */}
-          <div className="mb-20">
-            <div className="text-center mb-12">
-              <Typography variant="h3" color="blue-gray" className="mb-4 font-bold">
-                Our Process
-              </Typography>
-              <Typography className="text-blue-gray-600 max-w-2xl mx-auto">
-                From concept to delivery, we ensure every step meets the highest standards of quality and efficiency
-              </Typography>
-            </div>
+          {/* Process Section - Enhanced */}
+          <div className="mb-20 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden">
+            {/* Optional decorative elements */}
+            <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-20"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-200 rounded-full translate-x-1/3 translate-y-1/3 opacity-20"></div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-              {[
-                {
-                  step: "01",
-                  title: "Consultation",
-                  description: "Understanding your needs and requirements",
-                  icon: "💬",
-                  image: "/KH-Shams-Entp/img/consultation-process.jpg"
-                },
-                {
-                  step: "02",
-                  title: "Design",
-                  description: "Creating custom packaging concepts",
-                  icon: "✏️",
-                  image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg"
-                },
-                {
-                  step: "03",
-                  title: "Prototyping",
-                  description: "Developing and testing samples",
-                  icon: "🔬",
-                  image: "/KH-Shams-Entp/img/prototyping-process.jpg"
-                },
-                {
-                  step: "04",
-                  title: "Production",
-                  description: "Manufacturing with quality control",
-                  icon: "🏭",
-                  image: "/KH-Shams-Entp/img/production-process.jpg"
-                },
-                {
-                  step: "05",
-                  title: "Delivery",
-                  description: "Timely shipping and support",
-                  icon: "📦",
-                  image: "/KH-Shams-Entp/img/delivery-process.jpg"
-                }
-              ].map((process, index) => (
-                <div key={index} className="text-center group">
-                  <div className="relative mb-4">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      {process.icon}
+            <div className="relative z-10">
+              <div className="text-center mb-16">
+                <Typography variant="h3" color="blue-gray" className="mb-4 font-bold text-gray-800">
+                  Our Process
+                </Typography>
+                <Typography className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                  From concept to delivery, we ensure every step meets the highest standards of quality and efficiency
+                </Typography>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto px-4">
+                {[
+                  {
+                    step: "01",
+                    title: "Consultation",
+                    description: "Understanding your needs and requirements",
+                    icon: "💬",
+                    image: "/KH-Shams-Entp/img/consultation-process.jpg",
+                    gradient: "from-blue-500 to-cyan-500"
+                  },
+                  {
+                    step: "02",
+                    title: "Design",
+                    description: "Creating custom packaging concepts",
+                    icon: "✏️",
+                    image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                    gradient: "from-purple-500 to-pink-500"
+                  },
+                  {
+                    step: "03",
+                    title: "Prototyping",
+                    description: "Developing and testing samples",
+                    icon: "🔬",
+                    image: "/KH-Shams-Entp/img/prototyping-process.jpg",
+                    gradient: "from-green-500 to-emerald-500"
+                  },
+                  {
+                    step: "04",
+                    title: "Production",
+                    description: "Manufacturing with quality control",
+                    icon: "🏭",
+                    image: "/KH-Shams-Entp/img/production-process.jpg",
+                    gradient: "from-orange-500 to-red-500"
+                  },
+                  {
+                    step: "05",
+                    title: "Delivery",
+                    description: "Timely shipping and support",
+                    icon: "📦",
+                    image: "/KH-Shams-Entp/img/delivery-process.jpg",
+                    gradient: "from-indigo-500 to-blue-600"
+                  }
+                ].map((process, index) => (
+                  <div key={index} className="text-center group relative">
+                    {/* Connecting line (except for last item) */}
+                    {index < 4 && (
+                      <div className="hidden lg:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-blue-200 to-indigo-200 -z-10"></div>
+                    )}
+
+                    <div className="relative mb-6">
+                      <div className={`w-24 h-24 mx-auto bg-gradient-to-br ${process.gradient} rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-all duration-300 group-hover:shadow-xl relative z-10`}>
+                        {process.icon}
+                      </div>
+                      {/* Step number badge */}
+                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
+                        <span className="text-xs font-bold text-gray-700">{process.step}</span>
+                      </div>
                     </div>
 
+                    <Typography variant="h6" color="blue-gray" className="mb-3 font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">
+                      {process.title}
+                    </Typography>
+                    <Typography className="text-gray-600 text-sm leading-relaxed px-2">
+                      {process.description}
+                    </Typography>
                   </div>
-                  <Typography variant="h6" color="blue-gray" className="mb-2 font-semibold">
-                    {process.title}
-                  </Typography>
-                  <Typography className="text-gray-600 text-sm">
-                    {process.description}
-                  </Typography>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 
