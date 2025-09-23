@@ -762,23 +762,54 @@ export function Home() {
           </div>
 
           {/* Stats Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 lg:p-12 text-white text-center mb-16">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { number: "500+", label: "Projects Completed" },
-                { number: "98%", label: "Client Satisfaction" },
-                { number: "24/7", label: "Support Available" },
-                { number: "15+", label: "Years Experience" }
-              ].map((stat, index) => (
-                <div key={index}>
-                  <Typography variant="h3" className="font-bold mb-2">
-                    {stat.number}
-                  </Typography>
-                  <Typography className="text-blue-100 text-sm lg:text-base">
-                    {stat.label}
-                  </Typography>
-                </div>
-              ))}
+          <div className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-3xl p-8 lg:p-16 text-white text-center mb-16 overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-10"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-500 rounded-full translate-x-1/3 translate-y-1/3 opacity-10"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white rounded-full opacity-5"></div>
+
+            {/* Animated background dots */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-white rounded-full animate-pulse delay-300"></div>
+              <div className="absolute bottom-1/3 left-1/2 w-1.5 h-1.5 bg-white rounded-full animate-pulse delay-700"></div>
+            </div>
+
+            <div className="relative z-10">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                {[
+                  { number: "500+", label: "Projects Completed", icon: "🎯", delay: "0" },
+                  { number: "98%", label: "Client Satisfaction", icon: "⭐", delay: "200" },
+                  { number: "24/7", label: "Support Available", icon: "🛡️", delay: "400" },
+                  { number: "15+", label: "Years Experience", icon: "🏆", delay: "600" }
+                ].map((stat, index) => (
+                  <div key={index} className="group">
+                    <div className={`animate-fade-in-up delay-${stat.delay}`}>
+                      {/* Icon container */}
+                      <div className="w-16 h-16 mx-auto mb-4 bg-white/10 rounded-2xl flex items-center justify-center text-2xl backdrop-blur-sm group-hover:bg-white/20 group-hover:scale-110 transition-all duration-300">
+                        {stat.icon}
+                      </div>
+
+                      <Typography variant="h3" className="font-bold mb-3 text-4xl lg:text-5xl drop-shadow-lg">
+                        {stat.number}
+                      </Typography>
+                      <Typography className="text-blue-100 text-base lg:text-lg font-medium leading-relaxed group-hover:text-white transition-colors">
+                        {stat.label}
+                      </Typography>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Optional CTA button */}
+              <div className="mt-12 pt-8 border-t border-white/20">
+                <Typography variant="h6" className="mb-4 text-blue-100 font-light">
+                  Trusted by 500+ satisfied clients worldwide
+                </Typography>
+                <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg">
+                  Start Your Project
+                </button>
+              </div>
             </div>
           </div>
 
