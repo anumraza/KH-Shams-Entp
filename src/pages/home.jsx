@@ -905,7 +905,7 @@ export function Home() {
               </div>
 
               <button type="submit" className="btn">
-                Send Message <i className="fas fa-paper-plane"></i>
+                Send Message <i className="fa fa-paper-plane"></i>
               </button>
             </form>
 
