@@ -30,7 +30,7 @@ export const featuresData = [
       "End-to-end packaging logistics including manufacturing, inventory management, and timely delivery to streamline your operations.",
   },
   {
-    color: "red",
+    color: "blue",
     title: "Innovative Packaging Technology",
     icon: LightBulbIcon,
     description:
@@ -44,7 +44,7 @@ export const featuresData = [
       "Rigorous quality control processes ensuring every packaging product meets the highest standards of durability and craftsmanship.",
   },
   {
-    color: "teal",
+    color: "green",
     title: "Scalable Solutions",
     icon: ArrowsPointingOutIcon,
     description:

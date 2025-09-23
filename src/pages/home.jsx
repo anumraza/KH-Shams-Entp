@@ -27,95 +27,6 @@ import { Link } from "react-router-dom";
 
 
 export function Home() {
-  // Updated process steps for packaging company
-  const packagingProcess = [
-    {
-      title: "Consultation & Requirements Analysis",
-      desc: `We begin with a comprehensive assessment of your packaging needs, product specifications, and business goals to identify the optimal packaging solutions.`,
-      color: "bg-yellow-50",
-    },
-    {
-      title: "Design & Prototyping",
-      desc: `Our design team creates custom packaging concepts that balance aesthetics, functionality, and cost-effectiveness, producing prototypes for your approval.`,
-      color: "bg-purple-50",
-    },
-    {
-      title: "Material Selection & Sourcing",
-      desc: `We help select the most appropriate materials based on your product requirements, sustainability goals, and budget constraints.`,
-      color: "bg-blue-50",
-    },
-    {
-      title: "Production & Quality Control",
-      desc: `Our manufacturing facilities produce your packaging with strict quality control measures to ensure consistency and reliability.`,
-      color: "bg-orange-50",
-    },
-    {
-      title: "Delivery & Ongoing Support",
-      desc: `We manage timely delivery of your packaging and provide ongoing support for reorders, modifications, and new product launches.`,
-      color: "bg-green-50",
-    },
-  ];
-
-  const customSolutions = [
-    {
-      stage: "01",
-      title: "Needs Assessment",
-      desc: "Detailed analysis of your product specifications, shipping requirements, and branding needs to determine optimal packaging solutions.",
-      color: "bg-blue-50",
-    },
-    {
-      stage: "02",
-      title: "Design Development",
-      desc: "Creation of custom packaging designs that protect your product, enhance brand recognition, and provide excellent unboxing experiences.",
-      color: "bg-green-50",
-    },
-    {
-      stage: "03",
-      title: "Material Consultation",
-      desc: "Expert guidance on selecting the right materials that balance protection, sustainability, and cost considerations.",
-      color: "bg-yellow-50",
-    },
-    {
-      stage: "04",
-      title: "Prototype Testing",
-      desc: "Rigorous testing of packaging prototypes to ensure they meet durability, functionality, and aesthetic requirements.",
-      color: "bg-orange-50",
-    },
-    {
-      stage: "05",
-      title: "Production & Fulfillment",
-      desc: "Efficient manufacturing and timely delivery of your custom packaging solutions with consistent quality control.",
-      color: "bg-purple-50",
-    },
-  ];
-
-  const services = [
-    {
-      title: "Supply Chain Management",
-      desc: `We coordinate with reliable suppliers to ensure timely delivery of materials and manage inventory to prevent production delays.`,
-      color: "bg-yellow-100",
-    },
-    {
-      title: "Quality Assurance",
-      desc: `Implementation of strict quality control measures at every production stage to maintain consistency and meet client specifications.`,
-      color: "bg-purple-50",
-    },
-    {
-      title: "Sustainable Solutions",
-      desc: `Development of eco-friendly packaging options using recycled materials and implementing waste reduction practices.`,
-      color: "bg-blue-50",
-    },
-    {
-      title: "Logistics & Distribution",
-      desc: `Efficient coordination of packaging delivery to ensure your products reach you on schedule and in perfect condition.`,
-      color: "bg-orange-50",
-    },
-    {
-      title: "Continuous Innovation",
-      desc: `Regular review of packaging performance and incorporation of new technologies and materials to improve functionality and reduce costs.`,
-      color: "bg-green-50",
-    },
-  ];
 
   // Updated packaging-related images
   const images = [
@@ -315,9 +226,6 @@ export function Home() {
         <div className="container mx-auto">
           {/* Background Pattern */}
           <div className="text-center mb-16 relative">
-            {/* Background decorative elements */}
-            <div className="absolute top-10 left-10 w-20 h-20 bg-orange-100 rounded-full opacity-40 blur-xl"></div>
-            <div className="absolute bottom-5 right-10 w-16 h-16 bg-blue-100 rounded-full opacity-30 blur-xl"></div>
 
             <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
               Why Choose KH Shams Enterprise?
