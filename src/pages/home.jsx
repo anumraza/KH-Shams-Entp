@@ -903,9 +903,9 @@ export function Home() {
                 />
                 <label htmlFor="terms">I agree to the Terms and Conditions</label>
               </div>
-
-              <button type="submit" className="btn">
-                Send Message <i className="fa fa-paper-plane"></i>
+              sa
+              <button type="submit" className="btn" style={{ background: "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)" }}>
+                Send Mesge <i className="fa fa-paper-plane"></i>
               </button>
             </form>
 
