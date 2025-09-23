@@ -598,7 +598,7 @@ export function Home() {
 
       {/* services Section */}
 
-      <section id="services" className="relative bg-gradient-to-b from-gray-50 to-white py-20 lg:py-28 px-4">
+      <section id="services" className="relative min-h-screen px-4 pt-28 pb-20 bg-cover bg-center bg-no-repeat bg-fixed">
         <div className="container mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
