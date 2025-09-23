@@ -714,7 +714,7 @@ export function Home() {
 
               {/* Optional CTA button */}
               <div className="mt-12 pt-8 border-t border-white/20">
-                <Typography variant="h6" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
+                <Typography variant="h6" className="mb-4 font-bold  bg-clip-text text-transparent">
                   Trusted by 500+ satisfied clients worldwide
                 </Typography>
                 <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg">
