@@ -509,7 +509,7 @@ export function Home() {
 
       {/* services Section */}
 
-      < section id="services" className="bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden py-20 lg:py-28 px-4" >
+      < section id="services" className="bg-gradient-to-br from-blue-100 via-white to-indigo-100 relative overflow-hidden py-20 lg:py-28 px-4" >
         <div className="container mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
@@ -586,7 +586,7 @@ export function Home() {
           </div>
 
           {/* Process Section - Enhanced */}
-          <div className="mb-20 py-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 relative overflow-hidden">
+          <div className="mb-20 py-16 relative overflow-hidden">
             {/* Optional decorative elements */}
             <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-20"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-200 rounded-full translate-x-1/3 translate-y-1/3 opacity-20"></div>
