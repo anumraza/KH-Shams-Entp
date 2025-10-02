@@ -62,10 +62,13 @@ const INITIAL_FORM_STATE = Object.freeze({
 });
 
 // Memoized slider component
+// Memoized slider component - RESPONSIVE VERSION
 const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMouseLeave }) => {
   return (
-    <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32 overflow-hidden"
-      onMouseLeave={onMouseLeave}>
+    <div
+      className="relative flex content-center items-center justify-center pt-16 pb-32 overflow-hidden"
+      onMouseLeave={onMouseLeave}
+    >
       {/* Slider Background */}
       {images.map((image, index) => (
         <div
@@ -76,9 +79,14 @@ const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMous
           <img
             src={image.url}
             className="w-full h-full object-cover"
-            alt={`Slide ${index}`}
+            alt={`Slide ${index + 1} - ${image.title}`}
             loading={index === 0 ? "eager" : "lazy"}
             decoding="async"
+            // Responsive sizing
+            style={{
+              minHeight: '400px', // Minimum height for very small screens
+              maxHeight: '100vh', // Maximum height is viewport height
+            }}
           />
         </div>
       ))}
@@ -88,27 +96,45 @@ const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMous
 
       {/* Text Content */}
       <div className="max-w-6xl container relative mx-auto px-4 z-10">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[50vh]">
           <div className="w-full px-4 text-center">
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 md:mb-6 font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl px-2 animate-fade-in-up"
+              className="mb-3 md:mb-6 font-black 
+                text-2xl xs:text-3xl  // Extra small phones
+                sm:text-4xl           // Small phones
+                md:text-5xl           // Tablets
+                lg:text-6xl           // Laptops
+                xl:text-7xl           // Desktops
+                px-2 animate-fade-in-up leading-tight"
             >
               {images[current].title}
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="opacity-95 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 font-light animate-fade-in-up delay-150"
+              className="opacity-95 
+                text-base xs:text-lg    // Extra small phones
+                sm:text-xl              // Small phones
+                md:text-2xl             // Tablets
+                lg:text-3xl             // Laptops
+                px-2 xs:px-4 font-light animate-fade-in-up delay-150 leading-relaxed"
             >
               {images[current].subtitle}
             </Typography>
 
-            {/* CTA Buttons */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
+            {/* CTA Buttons - Responsive sizing */}
+            <div className="mt-6 sm:mt-8 flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center animate-fade-in-up delay-300">
               <Link to="/contactUs">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105">
+                <Button
+                  size="sm"
+                  className="bg-blue-600 hover:bg-blue-700 text-white 
+                    px-4 py-2 xs:px-6 xs:py-2.5   // Extra small to small
+                    sm:px-8 sm:py-3               // Small and up
+                    rounded-full text-sm xs:text-base sm:text-lg font-semibold 
+                    transition-all duration-300 hover:scale-105"
+                >
                   Contact Us
                 </Button>
               </Link>
@@ -116,7 +142,12 @@ const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMous
               <Link to="/products">
                 <Button
                   variant="outlined"
-                  className="border-white text-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105"
+                  size="sm"
+                  className="border-white text-white hover:bg-white/10 
+                    px-4 py-2 xs:px-6 xs:py-2.5   // Extra small to small
+                    sm:px-8 sm:py-3               // Small and up
+                    rounded-full text-sm xs:text-base sm:text-lg font-semibold 
+                    transition-all duration-300 hover:scale-105"
                 >
                   View Products
                 </Button>
@@ -126,39 +157,71 @@ const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMous
         </div>
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Buttons - Responsive visibility */}
       <button
         onClick={onPrev}
-        className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 rounded-full hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm"
+        className="absolute left-2 xs:left-4 top-1/2 -translate-y-1/2 
+          bg-black/30 text-white p-2 xs:p-3 rounded-full 
+          hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm
+          hidden sm:flex" // Hide on mobile, show on small and up
         aria-label="Previous slide"
       >
-        <ChevronLeftIcon className="w-6 h-6" />
+        <ChevronLeftIcon className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
       </button>
 
       <button
         onClick={onNext}
-        className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 text-white p-3 rounded-full hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm"
+        className="absolute right-2 xs:right-4 top-1/2 -translate-y-1/2 
+          bg-black/30 text-white p-2 xs:p-3 rounded-full 
+          hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm
+          hidden sm:flex" // Hide on mobile, show on small and up
         aria-label="Next slide"
       >
-        <ChevronRightIcon className="w-6 h-6" />
+        <ChevronRightIcon className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
       </button>
 
-      {/* Dots Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3 z-20">
+      {/* Mobile Navigation Buttons */}
+      <button
+        onClick={onPrev}
+        className="absolute left-2 top-1/2 -translate-y-1/2 
+          bg-black/50 text-white p-2 rounded-full 
+          hover:bg-black/70 z-20 transition-all duration-300
+          flex sm:hidden" // Show on mobile, hide on small and up
+        aria-label="Previous slide"
+      >
+        <ChevronLeftIcon className="w-4 h-4" />
+      </button>
+
+      <button
+        onClick={onNext}
+        className="absolute right-2 top-1/2 -translate-y-1/2 
+          bg-black/50 text-white p-2 rounded-full 
+          hover:bg-black/70 z-20 transition-all duration-300
+          flex sm:hidden" // Show on mobile, hide on small and up
+        aria-label="Next slide"
+      >
+        <ChevronRightIcon className="w-4 h-4" />
+      </button>
+
+      {/* Dots Indicator - Responsive sizing */}
+      <div className="absolute bottom-6 xs:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 xs:gap-3 z-20">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => onShowSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === current ? "bg-white scale-125" : "bg-white/50 hover:bg-white/70"
-              }`}
+            className={`rounded-full transition-all duration-300 ${index === current
+                ? "bg-white scale-110"
+                : "bg-white/50 hover:bg-white/70"
+              } 
+            w-2 h-2 xs:w-3 xs:h-3`} // Responsive dot size
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <ChevronDownIcon className="w-6 h-6 text-white/80" />
+      <div className="absolute bottom-2 xs:bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+        <ChevronDownIcon className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-white/80" />
       </div>
     </div>
   );
@@ -313,7 +376,7 @@ const AboutSection = memo(() => {
           <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
             <div className="text-center">
               <Typography variant="h3" className="text-blue-600 font-bold mb-1">
-                15+
+                35+
               </Typography>
               <Typography variant="small" className="text-gray-600">
                 Years Experience

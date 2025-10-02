@@ -84,7 +84,7 @@ export function AboutUs() {
               <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
                 <div className="text-center">
                   <Typography variant="h3" className="text-blue-600 font-bold mb-1">
-                    15+
+                    35+
                   </Typography>
                   <Typography variant="small" className="text-gray-600 font-semibold">
                     Years of Excellence

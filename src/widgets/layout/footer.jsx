@@ -45,8 +45,8 @@ export function Footer({ title, description, socials, menus, copyright }) {
               ))}
             </div>
           </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-24 lg:mt-0">
-            <div>
+          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-6 lg:mt-0">
+            <div className="mx-auto text-center">
               <Typography
                 variant="small"
                 color="blue-gray"
@@ -54,7 +54,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               >
                 Quick Links
               </Typography>
-              <ul className="mt-3">
+              <ul className=" mt-3">
                 <li>
                   <button
                     onClick={() => scrollToSection("home")}
@@ -89,20 +89,20 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="mx-auto text-center">
               <Typography
                 variant="small"
                 color="blue-gray"
-                className="mb-2 block font-medium uppercase"
+                className="mb-2 block font-medium uppercase text-left"
               >
                 Contact Us
               </Typography>
 
-              <ul className="mt-3">
+              <ul className="mt-3 flex flex-wrap justify-start gap-4">
                 <li>
                   <button
                     onClick={() => scrollToSection("process")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                    className="mb-2 block text-left font-normal text-blue-gray-500 hover:text-blue-gray-700"
                   >
                     Office: 46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi
                   </button>
@@ -110,7 +110,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 <li>
                   <button
                     onClick={() => scrollToSection("process")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                    className="mb-2 block text-left font-normal text-blue-gray-500 hover:text-blue-gray-700 "
                   >
                     Plant: PLot No, 55, Sector 27, Industrial Area, Korangi, Karachi
                   </button>
@@ -123,7 +123,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                     variant="small"
                     className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
                   >
-                    02135060170 PORT 0-1-24
+                    021-35060170
                   </Typography>
                 </li>
                 <li>
@@ -133,7 +133,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                     variant="small"
                     className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
                   >
-                    02135060171 PORT 0-1-25
+                    021-35060171
                   </Typography>
                 </li>
                 <li>
@@ -159,7 +159,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               variant="small"
               className="font-normal text-blue-gray-500"
             >
-              Copyright © {year} People Pinnacle. All rights reserved.
+              Copyright © {year} KH Shams Enterprise. All rights reserved.
             </Typography>
           </div>
         </div>
