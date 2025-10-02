@@ -104,7 +104,15 @@ export function Footer({ title, description, socials, menus, copyright }) {
                     onClick={() => scrollToSection("process")}
                     className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
                   >
-                    xx street, xx area
+                    Office: 46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => scrollToSection("process")}
+                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    Plant: PLot No, 55, Sector 27, Industrial Area, Korangi, Karachi
                   </button>
                 </li>
 
@@ -115,7 +123,28 @@ export function Footer({ title, description, socials, menus, copyright }) {
                     variant="small"
                     className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
                   >
-                    xxxx-xxxx xx xx
+                    02135060170 PORT 0-1-24
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    as="a"
+                    href="#"
+                    variant="small"
+                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    02135060171 PORT 0-1-25
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    as="a"
+                    href="#"
+                    variant="small"
+                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    0300 8200564
+
                   </Typography>
                 </li>
 
