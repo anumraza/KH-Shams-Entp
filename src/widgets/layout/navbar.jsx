@@ -24,7 +24,7 @@ export function Navbar() {
           {/* ✅ Logo should also use Link */}
           <Link to="/" className="flex items-center">
             <img
-              src="/KH-Shams-Entp/img/pinnacle.png"
+              src="/img/pinnacle.png"
               alt="Pinnacle Logo"
               className="h-8 sm:h-10 w-auto mr-2"
             />
