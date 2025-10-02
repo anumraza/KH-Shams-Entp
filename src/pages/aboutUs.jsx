@@ -210,10 +210,10 @@ export function AboutUs() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "500+", label: "Happy Clients", icon: "😊" },
-              { number: "1000+", label: "Projects Completed", icon: "📦" },
-              { number: "15+", label: "Years Experience", icon: "🏆" },
-              { number: "98%", label: "Client Satisfaction", icon: "⭐" }
+              { number: "500+", label: "Projects Successfully Completed for Clients", icon: "🎯", delay: "0" },
+              { number: "98%", label: "Client Satisfaction Rate Across Industries", icon: "⭐", delay: "200" },
+              { number: "24/7", label: "Dedicated Customer Support Available Anytime", icon: "🛡️", delay: "400" },
+              { number: "35+", label: "Years Experience in Printing and Packaging", icon: "🏆", delay: "600" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">
