@@ -27,22 +27,26 @@ import { Link } from "react-router-dom";
 // Memoized constants
 const IMAGES = Object.freeze([
   {
-    url: "/KH-Shams-Entp/img/pexels-tiger-lily-4481260.jpg",
+    url: "/img/pexels-tiger-lily-4481260.jpg",
+    // url: "/KH-Shams-Entp/img/pexels-tiger-lily-4481260.jpg",
     title: "CUSTOM PACKAGING SOLUTIONS",
     subtitle: "Tailored to your specific product requirements"
   },
   {
-    url: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_f325106e.jpg",
+    url: "/img/WhatsApp Image 2025-09-21 at 15.55.47_f325106e.jpg",
+    // url: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_f325106e.jpg",
     title: "SUSTAINABLE MATERIALS",
     subtitle: "Eco-friendly options for environmentally conscious brands"
   },
   {
-    url: "/KH-Shams-Entp/img/package-1511683_1280.jpg",
+    url: "/img/package-1511683_1280.jpg",
+    // url: "/KH-Shams-Entp/img/package-1511683_1280.jpg",
     title: "QUALITY MANUFACTURING",
     subtitle: "Precision production with rigorous quality control"
   },
   {
-    url: "/KH-Shams-Entp/img/empty-boxes-on-table.jpg",
+    url: "/img/empty-boxes-on-table.jpg",
+    // url: "/KH-Shams-Entp/img/empty-boxes-on-table.jpg",
     title: "QUALITY MANUFACTURING",
     subtitle: "Precision production with rigorous quality control"
   }
@@ -299,7 +303,8 @@ const AboutSection = memo(() => {
           <div className="rounded-3xl overflow-hidden shadow-2xl">
             <img
               alt="KH Shams Enterprise Packaging"
-              src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+              src="/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+              // src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
               className="w-full h-96 object-cover"
               loading="lazy"
             />
@@ -378,7 +383,8 @@ const VisionSection = memo(() => {
     <section
       id="vision"
       className="relative min-h-screen px-4 pt-28 pb-20 bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: "url('/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
+      style={{ backgroundImage: "url('/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
+    // style={{ backgroundImage: "url('/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 z-0"></div>
 
@@ -448,28 +454,32 @@ const ServicesSection = memo(() => {
     {
       title: "Custom Packaging",
       description: "Tailored solutions designed specifically for your products",
-      image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+      // image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+      image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
       icon: "🎨",
       color: "bg-blue-500"
     },
     {
       title: "Sustainable Solutions",
       description: "Eco-friendly packaging options for environmentally conscious brands",
-      image: "/KH-Shams-Entp/img/box-6063328_1280.png",
+      image: "/img/box-6063328_1280.png",
+      // image: "/KH-Shams-Entp/img/box-6063328_1280.png",
       icon: "🌱",
       color: "bg-green-500"
     },
     {
       title: "Bulk Manufacturing",
       description: "Large-scale production with consistent quality and timely delivery",
-      image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+      image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+      // image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
       icon: "🏭",
       color: "bg-orange-500"
     },
     {
       title: "Logistics Support",
       description: "End-to-end supply chain management and distribution solutions",
-      image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169056.jpg",
+      image: "/img/pexels-tima-miroshnichenko-6169056.jpg",
+      // image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169056.jpg",
       icon: "🚚",
       color: "bg-purple-500"
     }
@@ -481,7 +491,8 @@ const ServicesSection = memo(() => {
       title: "Consultation",
       description: "Understanding your needs and requirements",
       icon: "💬",
-      image: "/KH-Shams-Entp/img/consultation-process.jpg",
+      image: "/img/consultation-process.jpg",
+      // image: "/KH-Shams-Entp/img/consultation-process.jpg",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
@@ -489,7 +500,8 @@ const ServicesSection = memo(() => {
       title: "Design",
       description: "Creating custom packaging concepts",
       icon: "✏️",
-      image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+      image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+      // image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
       gradient: "from-purple-500 to-pink-500"
     },
     {
@@ -497,7 +509,8 @@ const ServicesSection = memo(() => {
       title: "Prototyping",
       description: "Developing and testing samples",
       icon: "🔬",
-      image: "/KH-Shams-Entp/img/prototyping-process.jpg",
+      image: "/img/prototyping-process.jpg",
+      // image: "/KH-Shams-Entp/img/prototyping-process.jpg",
       gradient: "from-green-500 to-emerald-500"
     },
     {
@@ -505,7 +518,8 @@ const ServicesSection = memo(() => {
       title: "Production",
       description: "Manufacturing with quality control",
       icon: "🏭",
-      image: "/KH-Shams-Entp/img/production-process.jpg",
+      image: "/img/production-process.jpg",
+      // image: "/KH-Shams-Entp/img/production-process.jpg",
       gradient: "from-orange-500 to-red-500"
     },
     {
@@ -513,7 +527,8 @@ const ServicesSection = memo(() => {
       title: "Delivery",
       description: "Timely shipping and support",
       icon: "📦",
-      image: "/KH-Shams-Entp/img/delivery-process.jpg",
+      image: "/img/delivery-process.jpg",
+      // image: "/KH-Shams-Entp/img/delivery-process.jpg",
       gradient: "from-indigo-500 to-blue-600"
     }
   ], []);
