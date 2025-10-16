@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useEffect, useState, memo } from "react";
+import React, { useMemo, useCallback, useEffect, useState, useRef, memo } from "react";
 import {
   Card,
   CardBody,
@@ -60,15 +60,16 @@ const INITIAL_FORM_STATE = Object.freeze({
   message: '',
   terms: false
 });
-const videoRef = useRef(null);
 
-useEffect(() => {
-  if (videoRef.current) {
-    videoRef.current.playbackRate = 0.5; // 👈 slower (1.0 is normal)
-  }
-}, []);
 
 const VideoHero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // 👈 slower (1.0 is normal)
+    }
+  }, []);
   return (
     <div className="relative flex items-center justify-center overflow-hidden h-[80vh] sm:h-[90vh]">
       {/* Background video */}
@@ -88,12 +89,14 @@ const VideoHero = () => {
       {/* Text content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-white font-bold text-3xl sm:text-5xl md:text-6xl mb-4 animate-fade-in-up">
-          KH SHams Entp. CUSTOM PACKAGING SOLUTIONS
+          KH SHams Enterprise
         </h1>
         <p className="text-white/90 text-lg sm:text-xl md:text-2xl mb-8 animate-fade-in-up delay-150">
-          CUSTOM PACKAGING SOLUTIONS Tailored to your specific product requirements
+          CUSTOM PACKAGING SOLUTIONS
         </p>
-
+        <p className="text-white/90 text-lg sm:text-xl md:text-2xl mb-8 animate-fade-in-up delay-150">
+          Tailored to your specific product requirements
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
           <Link to="/contactUs">
             <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg transition-all duration-300 hover:scale-105">
