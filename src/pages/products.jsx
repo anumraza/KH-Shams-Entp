@@ -29,19 +29,19 @@ export function Products() {
             description: "Tailored packaging solutions designed specifically for your products",
             products: [
                 {
-                    image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                    image: "/img/1 (1).png",
                     name: "Folding Cartons",
                     description: "High-quality paperboard boxes perfect for retail products",
                     features: ["Custom printing", "Various sizes", "Eco-friendly materials", "Reinforced corners"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg",
+                    image: "/img/1 (2).png",
                     name: "Rigid Boxes",
                     description: "Premium packaging for luxury items and high-end products",
                     features: ["Premium materials", "Magnetic closures", "Velvet lining", "Custom inserts"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg",
+                    image: "/img/1 (3).png",
                     name: "Corrugated Boxes",
                     description: "Durable shipping and storage solutions for all industries",
                     features: ["Multiple wall options", "Custom printing", "Die-cut designs", "Weather resistant"]
@@ -53,13 +53,13 @@ export function Products() {
             description: "Environmentally friendly packaging options for eco-conscious brands",
             products: [
                 {
-                    image: "/img/1 (1).png",
+                    image: "/img/1 (4).png",
                     name: "Recycled Paper Packaging",
                     description: "Packaging made from 100% recycled materials",
                     features: ["FSC certified", "Biodegradable", "Custom branding", "Cost-effective"]
                 },
                 {
-                    image: "/img/2.png",
+                    image: "/img/1 (5).png",
                     name: "Biodegradable Plastics",
                     description: "Plant-based plastics that break down naturally",
                     features: ["Compostable", "Food-safe", "Durable", "Custom shapes"]
@@ -83,13 +83,13 @@ export function Products() {
                     features: ["Resealable options", "Custom shapes", "High-quality printing", "Barrier protection"]
                 },
                 {
-                    image: "/img/business-4271251_1280.png",
+                    image: "/img/1 (6).png",
                     name: "Vacuum Bags",
                     description: "Air-tight packaging for food preservation and industrial use",
                     features: ["Multi-layer protection", "Durable seals", "Custom sizes", "High barrier films"]
                 },
                 {
-                    image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+                    image: "/img/1 (7).png",
                     name: "Shrink Sleeves",
                     description: "360° packaging that conforms to any container shape",
                     features: ["Full-body printing", "Tamper evidence", "UV protection", "Various materials"]
@@ -101,7 +101,7 @@ export function Products() {
             description: "Solutions designed to protect your products during shipping and handling",
             products: [
                 {
-                    image: "/img/shipping-box.jpg",
+                    image: "/img/1 (12).png",
                     name: "Bubble Wrap",
                     description: "Classic protective material with excellent cushioning properties",
                     features: ["Various bubble sizes", "Anti-static options", "Perforated rolls", "Custom widths"]
@@ -113,7 +113,7 @@ export function Products() {
                     features: ["Precision cutting", "Multiple density options", "Custom shapes", "Lightweight"]
                 },
                 {
-                    image: "/img/pexels-karolina-grabowska-4498152.jpg",
+                    image: "/img/1 (13).png",
                     name: "Air Pillows",
                     description: "Inflatable packaging that provides cushioning and void fill",
                     features: ["Space efficient", "Cost effective", "Easy to use", "Recyclable"]
@@ -189,15 +189,16 @@ export function Products() {
                                             floated={false}
                                             shadow={false}
                                             color="transparent"
-                                            className="m-0 rounded-none relative h-56 overflow-hidden"
+                                            className="m-0 rounded-none relative aspect-square overflow-hidden flex items-center justify-center bg-white"
                                         >
                                             <img
                                                 src={product.image}
                                                 alt={product.name}
-                                                className="h-full w-full object-contain p-4 group-hover:scale-105 transition-transform duration-500 bg-white"
+                                                className="w-4/5 h-4/5 object-contain group-hover:scale-105 transition-transform duration-500"
                                             />
                                             <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         </CardHeader>
+
                                         <CardBody className="text-center p-6">
                                             <Typography variant="h5" color="blue-gray" className="mb-3 font-bold text-xl">
                                                 {product.name}
@@ -235,11 +236,19 @@ export function Products() {
                     </IconButton>
                 </DialogHeader>
                 <DialogBody divider className="p-6">
-                    <div className="mb-6 h-64 flex items-center justify-center bg-gray-100 rounded-lg">
+                    {/* <div className="mb-6 h-64 aspect-square flex items-center justify-center bg-gray-100 rounded-lg">
                         <img
                             src={selectedProduct?.image}
                             alt={selectedProduct?.name}
                             className="max-h-full max-w-full object-contain p-4"
+                        />
+                    </div> */}
+                    <div className="mb-6 h-64 aspect-square flex items-center justify-center bg-gray-100 rounded-lg">
+                        <img
+                            src={selectedProduct?.image}
+                            alt={selectedProduct?.name}
+                            className="max-h-full max-w-full object-contain p-4"
+                        // className="w-4/5 h-4/5 object-contain"
                         />
                     </div>
                     <Typography variant="paragraph" className="mb-6 text-lg text-gray-700">
