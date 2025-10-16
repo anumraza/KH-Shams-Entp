@@ -53,19 +53,19 @@ export function Products() {
             description: "Environmentally friendly packaging options for eco-conscious brands",
             products: [
                 {
-                    image: "/img/box-304780_1280.png",
+                    image: "/img/1 (1).png",
                     name: "Recycled Paper Packaging",
                     description: "Packaging made from 100% recycled materials",
                     features: ["FSC certified", "Biodegradable", "Custom branding", "Cost-effective"]
                 },
                 {
-                    image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+                    image: "/img/2.png",
                     name: "Biodegradable Plastics",
                     description: "Plant-based plastics that break down naturally",
                     features: ["Compostable", "Food-safe", "Durable", "Custom shapes"]
                 },
                 {
-                    image: "/img/box-157686_1280.png",
+                    image: "/img/3.png",
                     name: "Mushroom Packaging",
                     description: "Innovative packaging grown from mycelium and agricultural waste",
                     features: ["100% biodegradable", "Lightweight", "Shock absorbent", "Custom molded"]
@@ -77,7 +77,7 @@ export function Products() {
             description: "Versatile packaging solutions for food, retail, and industrial applications",
             products: [
                 {
-                    image: "/img/brandable-box-yW9jdBmE1BY-unsplash.jpg",
+                    image: "/img/4.png",
                     name: "Stand-up Pouches",
                     description: "Convenient and eye-catching packaging for various products",
                     features: ["Resealable options", "Custom shapes", "High-quality printing", "Barrier protection"]
@@ -107,7 +107,7 @@ export function Products() {
                     features: ["Various bubble sizes", "Anti-static options", "Perforated rolls", "Custom widths"]
                 },
                 {
-                    image: "/img/pexels-tima-miroshnichenko-6169057.jpg",
+                    image: "/img/7.png",
                     name: "Foam Inserts",
                     description: "Custom-cut foam for perfect product protection",
                     features: ["Precision cutting", "Multiple density options", "Custom shapes", "Lightweight"]
@@ -125,19 +125,19 @@ export function Products() {
             description: "Unique packaging solutions for specific industries and applications",
             products: [
                 {
-                    image: "/img/pexels-tima-miroshnichenko-6169056.jpg",
+                    image: "/img/3.png",
                     name: "Food-Grade Packaging",
                     description: "Safe packaging solutions for food and beverage products",
                     features: ["FDA approved", "Temperature resistant", "Grease resistant", "Airtight seals"]
                 },
                 {
-                    image: "/img/pexels-karolina-grabowska-4506243.jpg",
+                    image: "/img/4.png",
                     name: "Pharmaceutical Packaging",
                     description: "Compliant packaging for medical and pharmaceutical products",
                     features: ["Child-resistant", "Tamper-evident", "Sterile barriers", "Compliance guaranteed"]
                 },
                 {
-                    image: "/img/package-1511683_1280.jpg",
+                    image: "/img/5.png",
                     name: "Electrostatic Packaging",
                     description: "Specialized packaging for electronic components",
                     features: ["ESD protection", "Static shielding", "Moisture barrier", "Durable construction"]
