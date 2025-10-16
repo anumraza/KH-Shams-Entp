@@ -39,13 +39,13 @@ const IMAGES = Object.freeze([
     subtitle: "Eco-friendly options for environmentally conscious brands"
   },
   {
-    url: "/img/package-1511683_1280.jpg",
+    url: "/img/1 (17)",
     // url: "/KH-Shams-Entp/img/package-1511683_1280.jpg",
     title: "QUALITY MANUFACTURING",
     subtitle: "Precision production with rigorous quality control"
   },
   {
-    url: "/img/empty-boxes-on-table.jpg",
+    url: "/img/2.png",
     // url: "/KH-Shams-Entp/img/empty-boxes-on-table.jpg",
     title: "QUALITY MANUFACTURING",
     subtitle: "Precision production with rigorous quality control"
@@ -503,69 +503,96 @@ const VisionSection = memo(() => {
   return (
     <section
       id="vision"
-      className="relative min-h-screen px-4 pt-28 pb-20 bg-cover bg-center bg-no-repeat bg-fixed"
-      style={{ backgroundImage: "url('/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
-    // style={{ backgroundImage: "url('/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_0c95050f.jpg')" }}
+      className="relative min-h-[600px] sm:min-h-[650px] lg:min-h-[700px] px-4 pt-24 pb-20 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70 z-0"></div>
+      {/* 🎥 Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover brightness-[0.7]"
+        src="/img/plant.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
 
+      {/* 🔲 Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 z-0"></div>
+
+      {/* 🌟 Main content */}
       <div className="relative z-10 container mx-auto">
         <div className="text-center mb-16">
-          <Typography
-            variant="h1"
-            color="white"
-            className="mb-6 font-bold text-4xl md:text-5xl lg:text-6xl"
-          >
+          <h2 className="text-white font-bold text-4xl sm:text-5xl lg:text-6xl mb-6 tracking-tight drop-shadow-lg">
             Our Vision
-          </Typography>
-          <Typography
-            variant="lead"
-            color="white"
-            className="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto leading-relaxed"
-          >
+          </h2>
+          <p className="text-white/90 text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed">
             To revolutionize product packaging through innovative design, sustainable practices,
             and cutting-edge manufacturing technologies that exceed client expectations.
-          </Typography>
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+        {/* 🌈 Vision Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 sm:mt-20 px-2 sm:px-4">
           {visionPoints.map((item, idx) => (
             <div
               key={idx}
-              className="group relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105 hover:bg-white/15"
+              className="group relative rounded-2xl p-8 border border-white/20 
+          bg-gradient-to-br from-white/10 to-white/5 hover:from-amber-500/10 hover:to-white/20
+          transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,200,100,0.25)]
+          animate-fadeInUp"
+              style={{
+                animationDelay: `${idx * 0.15}s`,
+                animationFillMode: "both",
+              }}
             >
               <div className="flex items-center justify-between mb-6">
-                <div className={`${item.bg} text-white w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
+                <div
+                  className={`${item.bg} text-white w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
+                >
                   {item.num}
                 </div>
-                <span className="text-3xl">{item.icon}</span>
+                <span className="text-3xl text-white/80 group-hover:text-amber-300 transition-colors duration-300">
+                  {item.icon}
+                </span>
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-amber-200 transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-amber-300 transition-colors duration-300">
                 {item.text}
               </h3>
-              <p className="text-gray-200 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-150">
+              <p className="text-gray-200 text-sm leading-relaxed opacity-90 group-hover:opacity-100 transition-opacity duration-300 delay-150">
                 {item.description}
               </p>
 
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-4/5 transition-all duration-500"></div>
+              {/* Glowing accent line */}
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent group-hover:w-4/5 transition-all duration-500"></div>
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-16">
-          <Link to="/contactUs">
-            <button className="bg-white text-blue-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-100 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-amber-200/50">
-              Join Our Vision →
-            </button>
-          </Link>
-        </div>
       </div>
 
-      <div className="absolute top-20 left-10 w-4 h-4 bg-white rounded-full opacity-20 animate-pulse"></div>
-      <div className="absolute top-1/2 right-20 w-6 h-6 bg-amber-400 rounded-full opacity-30 animate-bounce"></div>
-      <div className="absolute bottom-40 left-1/4 w-3 h-3 bg-green-400 rounded-full opacity-40 animate-ping"></div>
+      {/* ✨ Floating ambient lights */}
+      <div className="absolute top-16 left-8 w-6 h-6 bg-amber-400/40 rounded-full blur-md animate-pulse"></div>
+      <div className="absolute top-1/2 right-16 w-8 h-8 bg-green-400/30 rounded-full blur-lg animate-bounce"></div>
+      <div className="absolute bottom-20 left-1/3 w-4 h-4 bg-white/30 rounded-full blur-sm animate-ping"></div>
+
+      {/* 🌈 Fade-up animation */}
+      <style>{`
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+  `}</style>
     </section>
+
+
   );
 });
 
@@ -576,7 +603,7 @@ const ServicesSection = memo(() => {
       title: "Custom Packaging",
       description: "Tailored solutions designed specifically for your products",
       // image: "/KH-Shams-Entp/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
-      image: "/img/jukebox-print-FUohNQatzVs-unsplash.jpg",
+      image: "/img/1 (2).png",
       icon: "🎨",
       color: "bg-blue-500"
     },
@@ -591,7 +618,7 @@ const ServicesSection = memo(() => {
     {
       title: "Bulk Manufacturing",
       description: "Large-scale production with consistent quality and timely delivery",
-      image: "/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
+      image: "/img/1 (17).png",
       // image: "/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 15.55.47_54c26116.jpg",
       icon: "🏭",
       color: "bg-orange-500"
@@ -599,7 +626,7 @@ const ServicesSection = memo(() => {
     {
       title: "Logistics Support",
       description: "End-to-end supply chain management and distribution solutions",
-      image: "/img/pexels-tima-miroshnichenko-6169056.jpg",
+      image: "/img/2.png",
       // image: "/KH-Shams-Entp/img/pexels-tima-miroshnichenko-6169056.jpg",
       icon: "🚚",
       color: "bg-purple-500"
@@ -608,7 +635,6 @@ const ServicesSection = memo(() => {
 
   const processSteps = useMemo(() => [
     {
-      step: "01",
       title: "Consultation",
       description: "Understanding your needs and requirements",
       icon: "💬",
@@ -617,7 +643,6 @@ const ServicesSection = memo(() => {
       gradient: "from-blue-500 to-cyan-500"
     },
     {
-      step: "02",
       title: "Design",
       description: "Creating custom packaging concepts",
       icon: "✏️",
@@ -626,7 +651,6 @@ const ServicesSection = memo(() => {
       gradient: "from-purple-500 to-pink-500"
     },
     {
-      step: "03",
       title: "Prototyping",
       description: "Developing and testing samples",
       icon: "🔬",
@@ -635,7 +659,6 @@ const ServicesSection = memo(() => {
       gradient: "from-green-500 to-emerald-500"
     },
     {
-      step: "04",
       title: "Production",
       description: "Manufacturing with quality control",
       icon: "🏭",
@@ -644,7 +667,6 @@ const ServicesSection = memo(() => {
       gradient: "from-orange-500 to-red-500"
     },
     {
-      step: "05",
       title: "Delivery",
       description: "Timely shipping and support",
       icon: "📦",
@@ -726,9 +748,7 @@ const ServicesSection = memo(() => {
                     <div className={`w-24 h-24 mx-auto bg-gradient-to-br ${process.gradient} rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-all duration-300 group-hover:shadow-xl relative z-10`}>
                       {process.icon}
                     </div>
-                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center">
-                      <span className="text-xs font-bold text-gray-700">{process.step}</span>
-                    </div>
+
                   </div>
 
                   <Typography variant="h6" color="blue-gray" className="mb-3 font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">

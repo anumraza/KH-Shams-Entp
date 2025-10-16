@@ -14,157 +14,103 @@ export function Footer({ title, description, socials, menus, copyright }) {
   };
 
   return (
-    <footer className="relative px-4 pt-8 pb-6 bg-gray-100">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap pt-6 text-center lg:text-left">
-          <div className="w-full px-4 lg:w-6/12">
-            <a href="/" className="flex items-center justify-center lg:justify-start">
-              <img
-                src="/img/pinnacle-removebg-preview.png"
-                alt="Pinnacle Logo"
-                className="h-24 w-auto mr-2"
-              />
-            </a>
-            <Typography className="mt-4 font-normal text-blue-gray-500 text-center lg:text-left">
-              KH Shams Enterprise - Where packaging meets Global Trade
-            </Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
-              {socials.map(({ color, name, path }) => (
-                <a
-                  key={name}
-                  href={path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconButton color="white" className="rounded-full shadow-none bg-transparent">
-                    <Typography color={color}>
-                      <i className={`fa-brands fa-${name}`} />
-                    </Typography>
-                  </IconButton>
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="mx-auto mt-12 grid w-max grid-cols-2 gap-6 lg:mt-0">
-            <div className="mx-auto text-center">
-              <Typography
-                variant="small"
-                color="blue-gray"
-                className="mb-2 block font-medium uppercase"
-              >
-                Quick Links
-              </Typography>
-              <ul className=" mt-3">
-                <li>
-                  <button
-                    onClick={() => scrollToSection("home")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    Home
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("about")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    About Us
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("services")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    Services
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("vision")}
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    Our Vision
-                  </button>
-                </li>
-              </ul>
-            </div>
-            <div className="mx-auto text-center">
-              <Typography
-                variant="small"
-                color="blue-gray"
-                className="mb-2 block font-medium uppercase text-left"
-              >
-                Contact Us
-              </Typography>
+    <footer className="relative lg:px-40 pt-8 pb-6 bg-gray-100">
+      <div className="flex flex-wrap pt-6 text-center lg:text-left">
+        {/* Left side: Logo + Description + Socials */}
+        <div className="w-full px-4 lg:w-6/12 mb-10 lg:mb-0 flex flex-col items-center lg:items-start">
+          <a href="/" className="flex items-center justify-center lg:justify-start">
+            <img
+              src="/img/pinnacle-removebg-preview.png"
+              alt="Pinnacle Logo"
+              className="h-24 w-auto mr-2"
+            />
+          </a>
 
-              <ul className="mt-3 flex flex-wrap justify-start gap-4">
-                <li>
-                  <button
-                    onClick={() => scrollToSection("process")}
-                    className="mb-2 block text-left font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    Office: 46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("process")}
-                    className="mb-2 block text-left font-normal text-blue-gray-500 hover:text-blue-gray-700 "
-                  >
-                    Plant: PLot No, 55, Sector 27, Industrial Area, Korangi, Karachi
-                  </button>
-                </li>
+          <Typography className="mt-4 font-normal text-blue-gray-500 text-center lg:text-left">
+            KH Shams Enterprise — Where packaging meets Global Trade
+          </Typography>
 
-                <li>
-                  <Typography
-                    as="a"
-                    href="#"
-                    variant="small"
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    021-35060170
+          <div className="mt-6 flex justify-center lg:justify-start gap-2">
+            {socials.map(({ color, name, path }) => (
+              <a key={name} href={path} target="_blank" rel="noopener noreferrer">
+                <IconButton color="white" className="rounded-full shadow-none bg-transparent">
+                  <Typography color={color}>
+                    <i className={`fa-brands fa-${name}`} />
                   </Typography>
-                </li>
-                <li>
-                  <Typography
-                    as="a"
-                    href="#"
-                    variant="small"
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    021-35060171
-                  </Typography>
-                </li>
-                <li>
-                  <Typography
-                    as="a"
-                    href="#"
-                    variant="small"
-                    className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
-                  >
-                    0300 8200564
-
-                  </Typography>
-                </li>
-
-              </ul>
-            </div>
+                </IconButton>
+              </a>
+            ))}
           </div>
         </div>
-        <hr className="my-6 border-gray-300" />
-        <div className="flex flex-wrap items-center justify-center md:justify-between">
-          <div className="mx-auto w-full px-4 text-center">
+
+        {/* Right side: Links + Contact */}
+        <div className="w-full px-4 lg:w-6/12 grid grid-cols-1 sm:grid-cols-2 gap-10 text-center sm:text-left">
+          {/* Quick Links */}
+          <div className="flex flex-col items-center sm:items-start">
             <Typography
               variant="small"
-              className="font-normal text-blue-gray-500"
+              color="blue-gray"
+              className="mb-2 block font-medium uppercase"
             >
-              Copyright © {year} KH Shams Enterprise. All rights reserved.
+              Quick Links
             </Typography>
+            <ul className="mt-3 space-y-2">
+              <li>
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="text-blue-gray-500 hover:text-blue-gray-700"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="text-blue-gray-500 hover:text-blue-gray-700"
+                >
+                  About Us
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("services")}
+                  className="text-blue-gray-500 hover:text-blue-gray-700"
+                >
+                  Services
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("vision")}
+                  className="text-blue-gray-500 hover:text-blue-gray-700"
+                >
+                  Our Vision
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div className="flex flex-col items-center sm:items-start">
+            <Typography
+              variant="small"
+              color="blue-gray"
+              className="mb-2 block font-medium uppercase"
+            >
+              Contact Us
+            </Typography>
+            <ul className="mt-3 space-y-2 text-blue-gray-500">
+              <li>Office: 46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi</li>
+              <li>Plant: Plot No. 55, Sector 27, Industrial Area, Korangi, Karachi</li>
+              <li>021-35060170</li>
+              <li>021-35060171</li>
+              <li>0300-8200564</li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+
   );
 }
 

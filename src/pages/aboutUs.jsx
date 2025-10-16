@@ -73,10 +73,10 @@ export function AboutUs() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-700">
                 <img
-                  src="/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
+                  src="/img/1 (16).png"
                   // src="/KH-Shams-Entp/img/WhatsApp Image 2025-09-21 at 14.25.18_2092db2f.jpg"
                   alt="Our Packaging Facility"
-                  className="w-full h-96 object-cover"
+                  className="h-full w-auto object-cover"
                 />
               </div>
 
