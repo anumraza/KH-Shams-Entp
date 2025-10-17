@@ -104,7 +104,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               <li>Plant: Plot No. 55, Sector 27, Industrial Area, Korangi, Karachi</li>
               <li>021-35060170</li>
               <li>021-35060171</li>
-              <li>0300-8200564</li>
+              <li>0330-8453460</li>
             </ul>
           </div>
         </div>

@@ -26,8 +26,8 @@ export function ContactUs() {
             icon: PhoneIcon,
             title: "Phone",
             details: [
-                "021 35060170",
-                "0330 8453460"
+                "021-35060170",
+                "0330-8453460"
             ],
             color: "from-blue-500 to-cyan-500",
             action: () => {
