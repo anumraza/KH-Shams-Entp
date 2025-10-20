@@ -89,7 +89,7 @@ const VideoHero = () => {
       {/* Text content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-white font-bold text-3xl sm:text-5xl md:text-6xl mb-4 animate-fade-in-up">
-          KH SHams Enterprise
+          Kh SHams Enterprise
         </h1>
         <p className="text-white/90 text-lg sm:text-xl md:text-2xl mb-8 animate-fade-in-up delay-150">
           CUSTOM PACKAGING SOLUTIONS
@@ -292,7 +292,7 @@ const FeaturesSection = memo(() => {
       <div className="container mx-auto">
         <div className="text-center mb-16 relative">
           <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
-            Why Choose KH Shams Enterprise?
+            Why Choose Kh Shams Enterprise?
           </Typography>
           <Typography variant="lead" className="text-gray-700 max-w-3xl mx-auto text-lg leading-relaxed">
             Delivering excellence in packaging solutions with innovation, quality, and reliability
@@ -388,10 +388,10 @@ const AboutSection = memo(() => {
             <BuildingStorefrontIcon className="w-10 h-10 text-white" />
           </div>
           <Typography variant="h2" className="mb-4 font-bold bg-gradient-to-r from-blue-800 to-orange-600 bg-clip-text text-transparent">
-            About KH Shams Enterprise
+            About Kh Shams Enterprise
           </Typography>
           <Typography className="text-lg text-gray-700 leading-relaxed mb-8">
-            KH Shams Enterprise is a leading manufacturer of custom packaging solutions,
+            Kh Shams Enterprise is a leading manufacturer of custom packaging solutions,
             delivering high-quality, innovative packaging products tailored to our clients'
             specific needs. With state-of-the-art manufacturing facilities and a team of
             experienced packaging experts, we provide end-to-end packaging solutions that
@@ -456,7 +456,7 @@ const AboutSection = memo(() => {
             Premium Packaging Services
           </Typography>
           <Typography className="text-blue-100">
-            At KH Shams Enterprise, we follow a client-focused approach to deliver
+            At Kh Shams Enterprise, we follow a client-focused approach to deliver
             innovative packaging solutions. Our methodology is built on understanding
             your unique product requirements and translating them into functional,
             cost-effective, and visually appealing packaging.

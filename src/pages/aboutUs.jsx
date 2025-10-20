@@ -21,7 +21,7 @@ export function AboutUs() {
               color="white"
               className="mb-6 font-bold text-4xl md:text-5xl lg:text-6xl"
             >
-              About KH Shams Enterprise
+              About Kh Shams Enterprise
             </Typography>
             <Typography
               variant="lead"
@@ -49,7 +49,7 @@ export function AboutUs() {
                   Our Story
                 </Typography>
                 <Typography variant="paragraph" className="text-gray-700 text-lg mb-6 leading-relaxed">
-                  Founded in 2010, KH Shams Enterprise began as a small packaging workshop with a big vision:
+                  Founded in 2010, Kh Shams Enterprise began as a small packaging workshop with a big vision:
                   to revolutionize how businesses package and present their products. What started as a
                   humble operation has grown into a leading packaging solutions provider serving clients
                   across multiple industries.
@@ -240,7 +240,7 @@ export function AboutUs() {
               Leadership Team
             </Typography>
             <Typography variant="lead" className="text-gray-600 text-xl max-w-2xl mx-auto">
-              Meet the passionate leaders driving innovation and excellence at KH Shams Enterprise
+              Meet the passionate leaders driving innovation and excellence at Kh Shams Enterprise
             </Typography>
           </div>
 
@@ -334,7 +334,7 @@ export function AboutUs() {
             Ready to Transform Your Packaging?
           </Typography>
           <Typography variant="lead" color="white" className="mb-10 text-xl opacity-90 max-w-2xl mx-auto">
-            Join hundreds of satisfied clients who trust KH Shams Enterprise for their packaging needs
+            Join hundreds of satisfied clients who trust Kh Shams Enterprise for their packaging needs
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

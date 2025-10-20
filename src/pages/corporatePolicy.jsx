@@ -32,7 +32,7 @@ export function CorporatePolicy() {
                                 Quality Policy
                             </Typography>
                             <Typography className="text-blue-gray-700 mb-4">
-                                At KH Shams Enterprise, we are committed to delivering packaging solutions that consistently
+                                At Kh Shams Enterprise, we are committed to delivering packaging solutions that consistently
                                 exceed customer expectations through superior quality, innovative design, and meticulous
                                 craftsmanship.
                             </Typography>

@@ -184,7 +184,7 @@ export function ContactUs() {
                                         allowFullScreen=""
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
-                                        title="KH Shams Enterprise Location"
+                                        title="Kh Shams Enterprise Location"
                                     ></iframe>
                                 </div>
                                 <div className="p-3 bg-gray-50 text-center">

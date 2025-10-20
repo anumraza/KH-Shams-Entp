@@ -27,7 +27,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
           </a>
 
           <Typography className="mt-4 font-normal text-blue-gray-500 text-center lg:text-left">
-            KH Shams Enterprise — Where packaging meets Global Trade
+            Kh Shams Enterprise — Where packaging meets Global Trade
           </Typography>
 
           <div className="mt-6 flex justify-center lg:justify-start gap-2">
