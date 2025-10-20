@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { Footer } from "@/widgets/layout";
-
+import { Link } from "react-router-dom";
 export function AboutUs() {
   return (
     <>
@@ -60,8 +60,12 @@ export function AboutUs() {
                   craftsmanship to deliver packaging that not only protects products but also enhances
                   brand value and reduces environmental impact.
                 </Typography>
-                <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                  Download Company Profile
+                <Button onClick={() => {
+                  window.location.href = "mailto:info@khshamsentp.com";
+                }}
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                  email us
                 </Button>
               </div>
 
@@ -338,9 +342,11 @@ export function AboutUs() {
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
-              Contact Us
-            </Button>
+            <Link to="/contactUs">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                Contact Us
+              </Button>
+            </Link>
 
           </div>
         </div>

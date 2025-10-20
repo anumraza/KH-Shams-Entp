@@ -798,7 +798,11 @@ const ServicesSection = memo(() => {
               <Typography variant="h6" className="mb-4 font-bold  bg-clip-text text-transparent">
                 Trusted by 500+ satisfied clients worldwide
               </Typography>
-              <button className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg">
+              <button
+                onClick={() => {
+                  window.location.href = "mailto:info@khshamsentp.com";
+                }}
+                className="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 shadow-lg">
                 Start Your Project
               </button>
             </div>
@@ -814,7 +818,11 @@ const ServicesSection = memo(() => {
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-8 py-3">
+            <Button onClick={() => {
+              window.location.href = "mailto:info@khshamsentp.com";
+            }}
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 px-8 py-3">
               email us
             </Button>
           </div>

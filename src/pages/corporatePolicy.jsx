@@ -152,11 +152,11 @@ export function CorporatePolicy() {
                     </Card>
 
                     {/* Commitment Statement */}
-                    <div className="bg-gray-300 rounded-lg p-8 text-center">
-                        <Typography variant="h4" color="blue-gray" className="mb-4">
+                    <div className="text-white rounded-lg p-8 text-center" style={{ backgroundColor: "#e78311ff" }}>
+                        <Typography variant="h4" color="blue-gray" className="mb-4 text-white">
                             Our Commitment
                         </Typography>
-                        <Typography className="text-blue-gray-700 text-lg">
+                        <Typography className="text-white text-lg">
                             These policies represent our firm commitment to operating as a responsible, ethical,
                             and forward-thinking packaging solutions provider. We regularly review and update our
                             policies to ensure they remain relevant and effective in meeting our goals and serving

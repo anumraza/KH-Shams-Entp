@@ -1,4 +1,3 @@
-
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
@@ -56,37 +55,53 @@ export function Footer({ title, description, socials, menus, copyright }) {
             </Typography>
             <ul className="mt-3 space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-blue-gray-500 hover:text-blue-gray-700"
-                >
-                  Home
-                </button>
+                <Link to="/home">
+                  <button
+                    onClick={() => scrollToSection("home")}
+                    className="text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    Home
+                  </button>
+                </Link>
+
               </li>
+
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-blue-gray-500 hover:text-blue-gray-700"
-                >
-                  About Us
-                </button>
+                <Link to="/aboutUs">
+                  <button
+                    onClick={() => scrollToSection("about")}
+                    className="text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    About Us
+                  </button>
+                </Link>
               </li>
+
+
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
-                  className="text-blue-gray-500 hover:text-blue-gray-700"
-                >
-                  Services
-                </button>
+                <Link to="/products">
+                  <button
+                    onClick={() => scrollToSection("services")}
+                    className="text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    Producs
+                  </button>
+                </Link>
               </li>
+
+
               <li>
-                <button
-                  onClick={() => scrollToSection("vision")}
-                  className="text-blue-gray-500 hover:text-blue-gray-700"
-                >
-                  Our Vision
-                </button>
+                <Link to="/corporatePolicy">
+                  <button
+                    onClick={() => scrollToSection("vision")}
+                    className="text-blue-gray-500 hover:text-blue-gray-700"
+                  >
+                    Corporate Policy
+                  </button>
+                </Link>
               </li>
+
+
             </ul>
           </div>
 
@@ -99,18 +114,44 @@ export function Footer({ title, description, socials, menus, copyright }) {
             >
               Contact Us
             </Typography>
-            <ul className="mt-3 space-y-2 text-blue-gray-500">
-              <li>Office: 46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi</li>
-              <li>Plant: Plot No. 55, Sector 27, Industrial Area, Korangi, Karachi</li>
-              <li>021-35060170</li>
-              <li>021-35060171</li>
-              <li>0330-8453460</li>
+            <ul className="mt-3 space-y-3 text-blue-gray-500">
+              <li>
+                <strong>Office:</strong><br />
+                46/1 Lane 23, Khayaban-E-Badban, Phase VII, DHA, Karachi
+              </li>
+              <li>
+                <strong>Plant:</strong><br />
+                Plot No. 55, Sector 27, Industrial Area, Korangi, Karachi
+              </li>
+              <li className="flex flex-col">
+                <a href="tel:02135060170" className="flex items-center hover:text-blue-600">
+                  📞 021-35060170
+                </a>
+                <a href="tel:02135060171" className="flex items-center hover:text-blue-600">
+                  📞 021-35060171
+                </a>
+                <a href="tel:03308453460" className="flex items-center hover:text-blue-600">
+                  📞 0330-8453460
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@khshamsentp.com"
+                  className="flex items-center hover:text-blue-600"
+                >
+                  ✉️ info@khshamsentp.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </footer>
 
+      {/* Footer Bottom */}
+      <div className="mt-10 text-center text-blue-gray-500 text-sm">
+        © {year} Kh Shams Enterprise. All rights reserved.
+      </div>
+    </footer>
   );
 }
 
@@ -118,26 +159,10 @@ Footer.defaultProps = {
   title: "People Pinnacle",
   description: "Delivering exceptional talent and seamless business solutions",
   socials: [
-    {
-      color: "blue",
-      name: "facebook",
-      path: "https://www.facebook.com",
-    },
-    {
-      color: "light-blue",
-      name: "twitter",
-      path: "https://www.twitter.com",
-    },
-    {
-      color: "pink",
-      name: "instagram",
-      path: "https://www.instagram.com",
-    },
-    {
-      color: "black",
-      name: "linkedin",
-      path: "https://www.linkedin.com",
-    },
+    { color: "blue", name: "facebook", path: "https://www.facebook.com" },
+    { color: "light-blue", name: "twitter", path: "https://www.twitter.com" },
+    { color: "pink", name: "instagram", path: "https://www.instagram.com" },
+    { color: "black", name: "linkedin", path: "https://www.linkedin.com" },
   ],
 };
 

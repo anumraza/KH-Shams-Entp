@@ -131,10 +131,10 @@ export function ContactUs() {
                                                 <item.icon className="h-5 w-5 text-white" />
                                             </div>
                                             <div className="flex-1">
-                                                <Typography variant="h5" className="mb-2 font-semibold text-gray-800 text-base lg:text-lg">
+                                                <Typography variant="h5" className=" font-semibold text-gray-800 text-base lg:text-lg">
                                                     {item.title}
                                                 </Typography>
-                                                <div className="space-y-1 mb-3">
+                                                <div className="space-y-1 mb-2">
                                                     {item.details.map((detail, idx) => (
                                                         <Typography
                                                             key={idx}
@@ -165,7 +165,7 @@ export function ContactUs() {
                     </div>
 
                     {/* Map Section - Adjusted Height */}
-                    <div className="space-y-6">
+                    <div className="mt-28 space-y-12">
                         {/* Interactive Map with Fixed Height */}
                         <Card className="shadow-xl border-0 overflow-hidden">
                             <CardBody className="p-0">
