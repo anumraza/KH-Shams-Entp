@@ -89,7 +89,7 @@ const VideoHero = () => {
       {/* Text content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-white font-bold text-3xl sm:text-5xl md:text-6xl mb-4 animate-fade-in-up">
-          Kh SHams Enterprise
+          Kh Shams Enterprise
         </h1>
         <p className="text-white/90 text-lg sm:text-xl md:text-2xl mb-8 animate-fade-in-up delay-150">
           CUSTOM PACKAGING SOLUTIONS
