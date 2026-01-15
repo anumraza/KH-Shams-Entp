@@ -218,7 +218,7 @@ const ImageSlider = memo(({ images, current, onNext, onPrev, onShowSlide, onMous
       {/* Navigation Buttons - Responsive visibility */}
       <button
         onClick={onPrev}
-        className="absolute left-2 xs:left-4 top-1/2 -translate-y-1/2 
+        className=" z-10 absolute left-2 xs:left-4 top-1/2 -translate-y-1/2 
           bg-black/30 text-white p-2 xs:p-3 rounded-full 
           hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm
           hidden sm:flex" // Hide on mobile, show on small and up
