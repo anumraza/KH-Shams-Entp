@@ -113,7 +113,7 @@ More details: https://www.material-tailwind.com/docs/react/collapse
                     px-4 py-2 xs:px-6 xs:py-2.5   // Extra small to small
                     sm:px-8 sm:py-3               // Small and up
                     rounded-full text-sm xs:text-base sm:text-lg font-semibold 
-                    transition-all duration-300 hover:scale-105`,children:"View Products"})})]})]})})}),M.jsx("button",{onClick:n,className:`absolute left-2 xs:left-4 top-1/2 -translate-y-1/2 
+                    transition-all duration-300 hover:scale-105`,children:"View Products"})})]})]})})}),M.jsx("button",{onClick:n,className:` z-10 absolute left-2 xs:left-4 top-1/2 -translate-y-1/2 
           bg-black/30 text-white p-2 xs:p-3 rounded-full 
           hover:bg-black/60 z-20 transition-all duration-300 backdrop-blur-sm
           hidden sm:flex`,"aria-label":"Previous slide",children:M.jsx(ey,{className:"w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6"})}),M.jsx("button",{onClick:r,className:`absolute right-2 xs:right-4 top-1/2 -translate-y-1/2 
